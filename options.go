@@ -9,6 +9,10 @@ type Options interface {
 	Apply(data *irdata) error
 }
 
+func WithHttpClient(client *http.Client) Options {
+	return OptionsHttpClient{HttpClient: client}
+}
+
 type OptionsHttpClient struct {
 	HttpClient *http.Client
 }
@@ -22,6 +26,10 @@ func (o OptionsHttpClient) Apply(data *irdata) error {
 	return nil
 }
 
+func WithMembersUrl(membersUrl string) Options {
+	return OptionsMembersUrl{MembersUrl: membersUrl}
+}
+
 type OptionsMembersUrl struct {
 	MembersUrl string
 }
@@ -31,6 +39,10 @@ func (o OptionsMembersUrl) Apply(data *irdata) error {
 	return nil
 }
 
+func WithAutoReauthorize(autoReauthorize bool) Options {
+	return OptionsAutoReauthorize{AutoReauthorize: autoReauthorize}
+}
+
 type OptionsAutoReauthorize struct {
 	AutoReauthorize bool
 }
@@ -38,6 +50,10 @@ type OptionsAutoReauthorize struct {
 func (o OptionsAutoReauthorize) Apply(data *irdata) error {
 	data.autoReauthorize = o.AutoReauthorize
 	return nil
+}
+
+func WithAutoReauthorizeThreshold(reauthorizeThreshold time.Duration) Options {
+	return OptionsAutoReauthorizeThreshold{ReauthorizeThreshold: reauthorizeThreshold}
 }
 
 type OptionsAutoReauthorizeThreshold struct {

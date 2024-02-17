@@ -124,7 +124,7 @@ func TestEncodePassword(t *testing.T) {
 }
 
 func TestReauthorize(t *testing.T) {
-	c, err := Login(ValidEmail, ValidPassword)
+	c, err := Login(ValidEmail, ValidPassword, WithAutoReauthorize(true), WithAutoReauthorizeThreshold(10*time.Minute))
 	assert.NoError(t, err)
 
 	data, ok := c.(*irdata)
@@ -133,6 +133,14 @@ func TestReauthorize(t *testing.T) {
 	data.expiration = time.Now().Add(data.reauthorizeThreshold * 2)
 	assert.False(t, data.needsReauthorization(), "should not need reauthorization")
 
-	data.expiration = time.Now().Add(data.reauthorizeThreshold * -2)
+	data.expiration = time.Now().Add(data.reauthorizeThreshold / 2)
 	assert.True(t, data.needsReauthorization(), "should need reauthorization")
+
+	oldExpiration := data.expiration
+
+	err = data.Reauthenticate()
+	assert.NoError(t, err)
+
+	assert.True(t, data.IsLoggedIn(), "should be logged in")
+	assert.NotEqual(t, oldExpiration, data.expiration, "expiration should have changed")
 }

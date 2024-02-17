@@ -39,7 +39,7 @@ func (d *irdata) IsLoggedIn() bool {
 }
 
 func (d *irdata) needsReauthorization() bool {
-	return d.expiration.Before(time.Now().Add(-d.reauthorizeThreshold))
+	return d.expiration.Before(time.Now().Add(d.reauthorizeThreshold))
 }
 
 func (d *irdata) GetLoginExpiration() time.Time {
@@ -47,22 +47,22 @@ func (d *irdata) GetLoginExpiration() time.Time {
 }
 
 func (d *irdata) get(url string) (resp *http.Response, err error) {
-	if d.autoReauthorize && d.needsReauthorization() {
-		err = d.Reauthenticate()
-		if err != nil {
-			return nil, err
-		}
-	} else if !d.IsLoggedIn() {
-		return nil, &AuthenticationError{Msg: "not logged in"}
+	if err = d.Reauthenticate(); err != nil {
+		return nil, err
 	}
 
 	return d.client.Get(url)
 }
 
 func (d *irdata) Reauthenticate() error {
-	if d.IsLoggedIn() {
-		return nil
+	if d.autoReauthorize && d.needsReauthorization() {
+		err := d.Authenticate()
+		if err != nil {
+			return err
+		}
+	} else if !d.IsLoggedIn() {
+		return &AuthenticationError{Msg: "not logged in"}
 	}
 
-	return d.Authenticate()
+	return nil
 }
