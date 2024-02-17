@@ -35,7 +35,14 @@ jobs:
       run: go generate ./...
 
     - name: Run tests
-      run: go test -v ./... | tee /dev/tty | go-junit-report -set-exit-code > report.xml
+      id: tests
+      run: echo "OUTPUT=$(go test -v ./...)" >> $GITHUB_OUTPUT
+
+    - name: Convert to JUnit
+      run: |
+        export OUTPUT=${{ steps.tests.outputs.OUTPUT }}
+        echo $OUTPUT | go-junit-report > report.xml
+      if: always()
 
     - name: Test Summary
       uses: test-summary/action@v2
