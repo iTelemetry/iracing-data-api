@@ -14,6 +14,7 @@ type IRData interface {
 	CarClass() DataCarClass
 	Constant() DataConstant
 	Hosted() DataHosted
+	Track() DataTrack
 }
 
 type irdata struct {

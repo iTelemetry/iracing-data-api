@@ -88,7 +88,7 @@ type Session struct {
 	TimeLimit                  int                       `json:"time_limit"`
 	Track                      SessionTrack              `json:"track"`
 	TrackState                 SessionTrackState         `json:"track_state"`
-	TrackTypes                 []SessionTrackType        `json:"track_types"`
+	TrackTypes                 []TrackType               `json:"track_types"`
 	UnsportConductRuleMode     int                       `json:"unsport_conduct_rule_mode"`
 	WarmupLength               int                       `json:"warmup_length"`
 	Weather                    SessionWeather            `json:"weather"`
@@ -164,10 +164,6 @@ type SessionTrackState struct {
 	QualifyGripCompound  int  `json:"qualify_grip_compound"`
 	WarmupGripCompound   int  `json:"warmup_grip_compound"`
 	RaceGripCompound     int  `json:"race_grip_compound"`
-}
-
-type SessionTrackType struct {
-	TrackType string `json:"track_type"`
 }
 
 type SessionWeather struct {
