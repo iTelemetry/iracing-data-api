@@ -89,3 +89,35 @@ func TestLogin(t *testing.T) {
 		})
 	}
 }
+
+func TestEncodePassword(t *testing.T) {
+	testCases := []struct {
+		name     string
+		email    string
+		password string
+		want     string
+	}{
+		{
+			name:     "iRacing example email and password",
+			email:    "CLunky@iracing.Com",
+			password: "MyPassWord",
+			want:     "xGKecAR27ALXNuMLsGaG0v5Q9pSs2tZTZRKNgmHMg+Q=",
+		},
+		{
+			name:     "iRacing 2nd example email and password",
+			email:    "john.smith@iracing.com",
+			password: "SuperSecure123",
+			want:     "3NkLTzZtITXmFo7HHDwbGEnZox4VfwLMHHaNZzdNuE4=",
+		},
+	}
+
+	for _, tc := range testCases {
+		t.Run(tc.name, func(t *testing.T) {
+			got := encodePassword(tc.email, tc.password)
+
+			if got != tc.want {
+				t.Errorf("encodePassword(%v, %v) = %v; want %v", tc.email, tc.password, got, tc.want)
+			}
+		})
+	}
+}
