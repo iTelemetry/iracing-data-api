@@ -36,6 +36,9 @@ jobs:
 
     - name: Run tests
       id: tests
+      env:
+        IRDATA_EMAIL: ${{ secrets.IRDATA_EMAIL }}
+        IRDATA_PASSWORD: ${{ secrets.IRDATA_PASSWORD }}
       run: echo "OUTPUT=$(go test -v ./...)" >> $GITHUB_OUTPUT
 
     - name: Convert to JUnit
