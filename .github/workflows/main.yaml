@@ -46,7 +46,8 @@ jobs:
 
     - name: Generate Report
       id: convert-to-junit
-      run: go-junit-report -iocopy -in test-output.log -out report.xml
+      continue-on-error: true
+      run: go-junit-report -in test-output.log -out report.xml -set-exit-code
       if: steps.generate.outcome == 'success'
 
     - name: Test Summary
@@ -57,5 +58,5 @@ jobs:
       if: steps.generate.outcome == 'success'
 
     - name: Check for test failures
-      if: steps.tests.outcome == 'failure'
+      if: steps.convert-to-junit.outcome == 'failure'
       run: exit 1
