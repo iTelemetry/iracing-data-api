@@ -36,6 +36,7 @@ jobs:
       run: go generate ./...
 
     - name: Run tests
+      id: tests
       env:
         IRDATA_EMAIL: ${{ secrets.IRDATA_EMAIL }}
         IRDATA_PASSWORD: ${{ secrets.IRDATA_PASSWORD }}
@@ -51,3 +52,7 @@ jobs:
         paths: |
           report.xml
       if: steps.generate.outcome == 'success'
+
+    - name: Check for test failures
+      if: steps.tests.outcome == 'failure'
+      run: exit 1
