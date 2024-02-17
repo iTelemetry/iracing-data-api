@@ -39,25 +39,37 @@ func TestReturnsCombinedHostedSessions(t *testing.T) {
 		{
 			name:                 "GetCombinedSessionsWithBathurstPackageID",
 			includePackageFilter: true,
-			packageID:            146, // Bathurst
+			packageID:            219, // Bathurst
 			skipIfEmpty:          true,
 		},
 		{
-			name:                 "GetCombinedSessionsWithSpaPackageID",
+			name:                 "GetCombinedSessionsWithSpaEndurancePackageID",
 			includePackageFilter: true,
-			packageID:            103, // Spa
+			packageID:            165, // Spa Endurance Layout
+			skipIfEmpty:          true,
+		},
+		{
+			name:                 "GetCombinedSessionsWithSpaGrandPrixPackageID",
+			includePackageFilter: true,
+			packageID:            163, // Spa Grand Prix Layout
 			skipIfEmpty:          true,
 		},
 		{
 			name:                 "GetCombinedSessionsWithOkayamaPackageID",
 			includePackageFilter: true,
-			packageID:            109, // Okayama
+			packageID:            166, // Okayama Full Course
 			skipIfEmpty:          true,
 		},
 		{
-			name:                 "GetCombinedSessionsWithDaytonaPackageID",
+			name:                 "GetCombinedSessionsWithDaytonaRoadPackageID",
 			includePackageFilter: true,
-			packageID:            120, // Daytona
+			packageID:            192, // Daytona Road
+			skipIfEmpty:          true,
+		},
+		{
+			name:                 "GetCombinedSessionsWithDaytonaOvalPackageID",
+			includePackageFilter: true,
+			packageID:            191, // Daytona Oval
 			skipIfEmpty:          true,
 		},
 		{
@@ -69,10 +81,6 @@ func TestReturnsCombinedHostedSessions(t *testing.T) {
 
 	for _, test := range tests {
 		t.Run(test.name, func(t *testing.T) {
-			if test.skipIfEmpty {
-				t.Skip("Skipping test because it's expected to return empty")
-			}
-
 			var opts []HostedCombinedSessionsOption
 			if test.includePackageFilter {
 				opts = append(opts, &PackageIDOption{PackageID: test.packageID})
