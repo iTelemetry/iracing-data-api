@@ -46,12 +46,16 @@ func handleLink[T any](d *irdata, resp *http.Response, err error, output T) erro
 		return &ConfigurationError{Msg: "unable to make request", Trigger: err}
 	}
 
-	defer r.Body.Close()
-	if r.StatusCode != http.StatusOK {
-		return &ConfigurationError{Msg: "unexpected status code", Trigger: errors.New(r.Status)}
+	return handleResponse(r, err, output)
+}
+
+func handleResponse[T any](resp *http.Response, err error, output T) error {
+	defer resp.Body.Close()
+	if resp.StatusCode != http.StatusOK {
+		return &ConfigurationError{Msg: "unexpected status code", Trigger: errors.New(resp.Status)}
 	}
 
-	body, err := io.ReadAll(r.Body)
+	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return &ConfigurationError{Msg: "unable to read response body", Trigger: err}
 	}

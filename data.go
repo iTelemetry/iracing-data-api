@@ -12,6 +12,7 @@ type IRData interface {
 
 	Car() DataCar
 	CarClass() DataCarClass
+	Constant() DataConstant
 }
 
 type irdata struct {
