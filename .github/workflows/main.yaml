@@ -41,12 +41,11 @@ jobs:
         IRDATA_EMAIL: ${{ secrets.IRDATA_EMAIL }}
         IRDATA_PASSWORD: ${{ secrets.IRDATA_PASSWORD }}
       run: |
-        set +o pipefail
-        go test -v ./... | tee test-output.log ; echo $?
+        go test -v ./... > test-output.log
 
-    - name: Convert to JUnit
+    - name: Generate Report
       id: convert-to-junit
-      run: cat test-output.log | go-junit-report -set-exit-code > report.xml
+      run: cat test-output.log | go-junit-report -iocopy -out -set-exit-code > report.xml
       if: steps.generate.outcome == 'success'
 
     - name: Test Summary
