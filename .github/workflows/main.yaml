@@ -42,7 +42,7 @@ jobs:
         IRDATA_EMAIL: ${{ secrets.IRDATA_EMAIL }}
         IRDATA_PASSWORD: ${{ secrets.IRDATA_PASSWORD }}
       run: |
-        go test -v ./... > test-output.log
+        go test -v ./... 2>&1 | tee test-output.log
 
     - name: Generate Report
       id: convert-to-junit
