@@ -40,7 +40,9 @@ jobs:
       env:
         IRDATA_EMAIL: ${{ secrets.IRDATA_EMAIL }}
         IRDATA_PASSWORD: ${{ secrets.IRDATA_PASSWORD }}
-      run: go test -v ./... | tee test-output.log
+      run: |
+        set +o pipefail
+        go test -v ./... | tee test-output.log ; echo $?
 
     - name: Convert to JUnit
       run: cat test-output.log | go-junit-report > report.xml
