@@ -9,6 +9,7 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"net/http/cookiejar"
 	"strings"
 )
 
@@ -146,6 +147,10 @@ func (d *irdata) Authenticate() error {
 			membersCookie = true
 			break
 		}
+	}
+
+	if d.client.Jar == nil {
+		d.client.Jar, _ = cookiejar.New(&cookiejar.Options{})
 	}
 
 	d.client.Jar.SetCookies(resp.Request.URL, d.cookies)
