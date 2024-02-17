@@ -11,6 +11,7 @@ type IRData interface {
 	GetLoginExpiration() time.Time
 
 	Car() DataCar
+	CarClass() DataCarClass
 }
 
 type irdata struct {
