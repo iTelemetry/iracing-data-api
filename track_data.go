@@ -36,7 +36,7 @@ type Track struct {
 	Opens                  string      `json:"opens"`
 	PackageID              int         `json:"package_id"`
 	PitRoadSpeedLimit      int         `json:"pit_road_speed_limit,omitempty"`
-	Price                  int         `json:"price"`
+	Price                  float64     `json:"price"`
 	PriceDisplay           string      `json:"price_display,omitempty"`
 	Priority               int         `json:"priority"`
 	Purchasable            bool        `json:"purchasable"`
