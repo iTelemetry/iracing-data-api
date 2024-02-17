@@ -32,6 +32,7 @@ jobs:
       run: go vet
 
     - name: generate
+      id: generate
       run: go generate ./...
 
     - name: Run tests
@@ -42,11 +43,11 @@ jobs:
 
     - name: Convert to JUnit
       run: cat test-output.log | go-junit-report > report.xml
-      if: always()
+      if: steps.generate.outcome == 'success'
 
     - name: Test Summary
       uses: test-summary/action@v2
       with:
         paths: |
           report.xml
-      if: always()
+      if: steps.generate.outcome == 'success'
