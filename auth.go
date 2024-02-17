@@ -11,6 +11,7 @@ import (
 	"net/http"
 	"net/http/cookiejar"
 	"strings"
+	"time"
 )
 
 type AuthRequest struct {
@@ -55,8 +56,9 @@ func Login(email string, password string, options ...Options) (IRData, error) {
 	encodedHash := encodePassword(email, password)
 
 	data := &irdata{
-		client:     http.DefaultClient,
-		membersUrl: "https://members-ng.iracing.com",
+		client:               http.DefaultClient,
+		membersUrl:           "https://members-ng.iracing.com",
+		reauthorizeThreshold: 1 * time.Hour,
 
 		email:        email,
 		passwordHash: encodedHash,

@@ -3,6 +3,7 @@ package irdata
 import (
 	"os"
 	"testing"
+	"time"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -120,4 +121,18 @@ func TestEncodePassword(t *testing.T) {
 			}
 		})
 	}
+}
+
+func TestReauthorize(t *testing.T) {
+	c, err := Login(ValidEmail, ValidPassword)
+	assert.NoError(t, err)
+
+	data, ok := c.(*irdata)
+	assert.True(t, ok)
+
+	data.expiration = time.Now().Add(data.reauthorizeThreshold * 2)
+	assert.False(t, data.needsReauthorization(), "should not need reauthorization")
+
+	data.expiration = time.Now().Add(data.reauthorizeThreshold * -2)
+	assert.True(t, data.needsReauthorization(), "should need reauthorization")
 }

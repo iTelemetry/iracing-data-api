@@ -17,7 +17,7 @@ type DataCarClass interface {
 func (c *irdataCarClass) Get() ([]CarClass, error) {
 	d := c.parent
 
-	resp, err := d.client.Get(fmt.Sprintf("%s/data/carclass/get", d.membersUrl))
+	resp, err := d.get(fmt.Sprintf("%s/data/carclass/get", d.membersUrl))
 	var output []CarClass
 	err = handleLink(d, resp, err, &output)
 	if err != nil {

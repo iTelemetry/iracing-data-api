@@ -19,7 +19,7 @@ type DataConstant interface {
 func (c *irdataConstant) GetCategories() ([]Category, error) {
 	d := c.parent
 
-	resp, err := d.client.Get(fmt.Sprintf("%s/data/constants/categories", d.membersUrl))
+	resp, err := d.get(fmt.Sprintf("%s/data/constants/categories", d.membersUrl))
 	var output []Category
 	err = handleResponse(resp, err, &output)
 	if err != nil {
@@ -32,7 +32,7 @@ func (c *irdataConstant) GetCategories() ([]Category, error) {
 func (c *irdataConstant) GetDivisions() ([]Division, error) {
 	d := c.parent
 
-	resp, err := d.client.Get(fmt.Sprintf("%s/data/constants/divisions", d.membersUrl))
+	resp, err := d.get(fmt.Sprintf("%s/data/constants/divisions", d.membersUrl))
 	var output []Division
 	err = handleResponse(resp, err, &output)
 	if err != nil {
@@ -45,7 +45,7 @@ func (c *irdataConstant) GetDivisions() ([]Division, error) {
 func (c *irdataConstant) GetEventTypes() ([]EventType, error) {
 	d := c.parent
 
-	resp, err := d.client.Get(fmt.Sprintf("%s/data/constants/event_types", d.membersUrl))
+	resp, err := d.get(fmt.Sprintf("%s/data/constants/event_types", d.membersUrl))
 	var output []EventType
 	err = handleResponse(resp, err, &output)
 	if err != nil {

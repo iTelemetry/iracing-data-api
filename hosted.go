@@ -21,7 +21,7 @@ type DataHosted interface {
 func (c *irdataHosted) GetSessions() (HostedSessions, error) {
 	d := c.parent
 
-	resp, err := d.client.Get(fmt.Sprintf("%s/data/hosted/sessions", d.membersUrl))
+	resp, err := d.get(fmt.Sprintf("%s/data/hosted/sessions", d.membersUrl))
 	var output HostedSessions
 	err = handleLink(d, resp, err, &output)
 	if err != nil {
@@ -58,7 +58,7 @@ func (c *irdataHosted) GetCombinedSessions(opts ...HostedCombinedSessionsOption)
 
 	u.RawQuery = q.Encode()
 
-	resp, err := d.client.Get(u.String())
+	resp, err := d.get(u.String())
 	var output HostedSessions
 	err = handleLink(d, resp, err, &output)
 	if err != nil {

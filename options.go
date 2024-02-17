@@ -1,6 +1,9 @@
 package irdata
 
-import "net/http"
+import (
+	"net/http"
+	"time"
+)
 
 type Options interface {
 	Apply(data *irdata) error
@@ -25,5 +28,23 @@ type OptionsMembersUrl struct {
 
 func (o OptionsMembersUrl) Apply(data *irdata) error {
 	data.membersUrl = o.MembersUrl
+	return nil
+}
+
+type OptionsAutoReauthorize struct {
+	AutoReauthorize bool
+}
+
+func (o OptionsAutoReauthorize) Apply(data *irdata) error {
+	data.autoReauthorize = o.AutoReauthorize
+	return nil
+}
+
+type OptionsAutoReauthorizeThreshold struct {
+	ReauthorizeThreshold time.Duration
+}
+
+func (o OptionsAutoReauthorizeThreshold) Apply(data *irdata) error {
+	data.reauthorizeThreshold = o.ReauthorizeThreshold
 	return nil
 }
