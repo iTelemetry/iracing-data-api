@@ -46,7 +46,7 @@ jobs:
 
     - name: Generate Report
       id: convert-to-junit
-      run: cat test-output.log | go-junit-report -iocopy -out > report.xml
+      run: go-junit-report -iocopy -in test-output.log -out report.xml
       if: steps.generate.outcome == 'success'
 
     - name: Test Summary
