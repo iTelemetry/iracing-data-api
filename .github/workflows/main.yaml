@@ -37,6 +37,7 @@ jobs:
 
     - name: Run tests
       id: tests
+      continue-on-error: true
       env:
         IRDATA_EMAIL: ${{ secrets.IRDATA_EMAIL }}
         IRDATA_PASSWORD: ${{ secrets.IRDATA_PASSWORD }}
@@ -45,7 +46,7 @@ jobs:
 
     - name: Generate Report
       id: convert-to-junit
-      run: cat test-output.log | go-junit-report -iocopy -out -set-exit-code > report.xml
+      run: cat test-output.log | go-junit-report -iocopy -out > report.xml
       if: steps.generate.outcome == 'success'
 
     - name: Test Summary
@@ -56,5 +57,5 @@ jobs:
       if: steps.generate.outcome == 'success'
 
     - name: Check for test failures
-      if: steps.convert-to-junit.outcome == 'failure'
+      if: steps.tests.outcome == 'failure'
       run: exit 1
