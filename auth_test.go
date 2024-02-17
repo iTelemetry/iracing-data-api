@@ -48,7 +48,7 @@ func TestLogin(t *testing.T) {
 			password:      ValidPassword,
 			options:       []Options{}, // No extra options
 			errExpected:   false,
-			expectedEmail: "nope",
+			expectedEmail: ValidEmail,
 		},
 		{
 			name:          "InvalidEmail",
