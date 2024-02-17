@@ -148,6 +148,8 @@ func (d *irdata) Authenticate() error {
 		}
 	}
 
+	d.client.Jar.SetCookies(resp.Request.URL, d.cookies)
+
 	if !membersCookie {
 		return &AuthenticationError{Msg: "unable to find 'authtoken_members' cookie"}
 	}
