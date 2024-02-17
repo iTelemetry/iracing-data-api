@@ -47,7 +47,7 @@ jobs:
     - name: Generate Report
       id: convert-to-junit
       continue-on-error: true
-      run: cat test-output.log | go-junit-report -out report.xml -set-exit-code
+      run: cat test-output.log | go-junit-report -set-exit-code > report.xml
       if: steps.generate.outcome == 'success'
 
     - name: Test Summary
