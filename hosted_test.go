@@ -39,37 +39,25 @@ func TestReturnsCombinedHostedSessions(t *testing.T) {
 		{
 			name:                 "GetCombinedSessionsWithBathurstPackageID",
 			includePackageFilter: true,
-			packageID:            219, // Bathurst
+			packageID:            146, // Bathurst
 			skipIfEmpty:          true,
 		},
 		{
-			name:                 "GetCombinedSessionsWithSpaEndurancePackageID",
+			name:                 "GetCombinedSessionsWithSpaPackageID",
 			includePackageFilter: true,
-			packageID:            165, // Spa Endurance Layout
-			skipIfEmpty:          true,
-		},
-		{
-			name:                 "GetCombinedSessionsWithSpaGrandPrixPackageID",
-			includePackageFilter: true,
-			packageID:            163, // Spa Grand Prix Layout
+			packageID:            103, // Spa (165: Endurance, 163: Grand Prix)
 			skipIfEmpty:          true,
 		},
 		{
 			name:                 "GetCombinedSessionsWithOkayamaPackageID",
 			includePackageFilter: true,
-			packageID:            166, // Okayama Full Course
+			packageID:            109, // Okayama (166: Full Course)
 			skipIfEmpty:          true,
 		},
 		{
-			name:                 "GetCombinedSessionsWithDaytonaRoadPackageID",
+			name:                 "GetCombinedSessionsWithDaytonaPackageID",
 			includePackageFilter: true,
-			packageID:            192, // Daytona Road
-			skipIfEmpty:          true,
-		},
-		{
-			name:                 "GetCombinedSessionsWithDaytonaOvalPackageID",
-			includePackageFilter: true,
-			packageID:            191, // Daytona Oval
+			packageID:            120, // Daytona (191: Oval, 192: Road Course)
 			skipIfEmpty:          true,
 		},
 		{
