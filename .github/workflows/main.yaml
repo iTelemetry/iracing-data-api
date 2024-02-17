@@ -57,6 +57,12 @@ jobs:
           report.xml
       if: steps.generate.outcome == 'success'
 
+    - name: Test Reports
+      uses: xportation/junit-coverage-report@main
+      with:
+        junit-path: ./report.xml
+      if: steps.generate.outcome == 'success'
+
     - name: Check for test failures
       if: steps.convert-to-junit.outcome == 'failure'
       run: exit 1
