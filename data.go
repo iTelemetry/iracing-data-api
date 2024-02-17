@@ -9,6 +9,8 @@ type IRData interface {
 	Email() string
 	IsLoggedIn() bool
 	GetLoginExpiration() time.Time
+
+	Car() DataCar
 }
 
 type irdata struct {

@@ -38,3 +38,12 @@ type ServiceUnavailableError struct {
 func (e *ServiceUnavailableError) Error() string {
 	return generateError(e.Msg, e.Trigger)
 }
+
+type LinkError struct {
+	Msg     string
+	Trigger error
+}
+
+func (e *LinkError) Error() string {
+	return generateError(e.Msg, e.Trigger)
+}
