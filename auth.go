@@ -137,7 +137,7 @@ func (d *irdata) Authenticate() error {
 		return &ConfigurationError{Msg: "unable to unmarshal authentication response body", Trigger: err}
 	}
 
-	if responseBody.AuthCode == 0 {
+	if responseBody.AuthCode == 0 || responseBody.AuthCode == float64(0) {
 		return &AuthenticationError{Msg: "authentication failed", Trigger: errors.New(responseBody.Message)}
 	}
 
