@@ -17,6 +17,7 @@ type irdataSeries struct {
 type DataSeries interface {
 	Assets(opts ...SeriesAssetsOption) (SeriesAssets, error)
 	Get() (Series, error)
+	Seasons(opts ...SeriesSeasonsOption) (SeriesSeasons, error)
 }
 
 type seriesAssetsOptions struct {
@@ -98,6 +99,47 @@ func (c *irdataSeries) Get() (Series, error) {
 	err = handleLink(d, resp, err, &output)
 	if err != nil {
 		return Series{}, err
+	}
+
+	return output, nil
+}
+
+type seriesSeasonsOptions struct {
+	values *url.Values
+}
+
+type SeriesSeasonsOption func(*seriesSeasonsOptions)
+
+func WithIncludeSeries(include bool) SeriesSeasonsOption {
+	return func(v *seriesSeasonsOptions) {
+		v.values.Set("include_series", fmt.Sprintf("%t", include))
+	}
+}
+
+func (c *irdataSeries) Seasons(opts ...SeriesSeasonsOption) (SeriesSeasons, error) {
+	d := c.parent
+
+	u, err := url.Parse(fmt.Sprintf("%s/data/series/seasons", d.membersUrl))
+	if err != nil {
+		return SeriesSeasons{}, &ConfigurationError{Msg: "unable to parse URL", Trigger: err}
+	}
+
+	q := u.Query()
+	o := &seriesSeasonsOptions{
+		values: &q,
+	}
+
+	for _, opt := range opts {
+		opt(o)
+	}
+
+	u.RawQuery = q.Encode()
+
+	resp, err := d.get(u.String())
+	var output SeriesSeasons
+	err = handleLink(d, resp, err, &output)
+	if err != nil {
+		return SeriesSeasons{}, err
 	}
 
 	return output, nil

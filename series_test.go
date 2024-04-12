@@ -61,3 +61,17 @@ func TestReturnsSeries(t *testing.T) {
 		assert.NotEmpty(t, c.SeriesName)
 	}
 }
+
+func TestReturnsSeriesSeasons(t *testing.T) {
+	api := DefaultClient.Series()
+	assert.NotNil(t, api)
+
+	values, err := api.Seasons()
+	assert.NoError(t, err)
+	assert.NotEmpty(t, values)
+
+	for _, c := range values {
+		assert.NotEmpty(t, c.SeriesID)
+		assert.NotEmpty(t, c.SeasonName)
+	}
+}
