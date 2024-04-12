@@ -16,6 +16,7 @@ type IRData interface {
 	Hosted() DataHosted
 	Track() DataTrack
 	Season() DataSeason
+	Series() DataSeries
 }
 
 type irdata struct {
