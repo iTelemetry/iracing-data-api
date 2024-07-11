@@ -26,6 +26,7 @@ type Car struct {
 	FreeWithSubscription    bool                    `json:"free_with_subscription"`
 	HasHeadlights           bool                    `json:"has_headlights"`
 	HasMultipleDryTireTypes bool                    `json:"has_multiple_dry_tire_types"`
+	HasRainCapableTireTypes bool                    `json:"has_rain_capable_tire_types"`
 	Hp                      int                     `json:"hp"`
 	IsPsPurchasable         bool                    `json:"is_ps_purchasable"`
 	MaxPowerAdjustPct       int                     `json:"max_power_adjust_pct"`
@@ -35,6 +36,7 @@ type Car struct {
 	Patterns                int                     `json:"patterns"`
 	Price                   float64                 `json:"price"`
 	PriceDisplay            string                  `json:"price_display,omitempty"`
+	RainEnabled             bool                    `json:"rain_enabled"`
 	Retired                 bool                    `json:"retired"`
 	SearchFilters           string                  `json:"search_filters"`
 	Sku                     int                     `json:"sku"`

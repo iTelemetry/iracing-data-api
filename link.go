@@ -3,6 +3,7 @@ package irdata
 import (
 	"encoding/json"
 	"errors"
+	"fmt"
 	"io"
 	"net/http"
 	"time"
@@ -59,6 +60,8 @@ func handleResponse[T any](resp *http.Response, err error, output T) error {
 	if err != nil {
 		return &ConfigurationError{Msg: "unable to read response body", Trigger: err}
 	}
+
+	fmt.Printf("\n%s\n", body)
 
 	err = json.Unmarshal(body, output)
 	if err != nil {
