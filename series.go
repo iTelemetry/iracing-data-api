@@ -48,7 +48,7 @@ func (c *irdataSeries) Assets(opts ...SeriesAssetsOption) (SeriesAssets, error) 
 	q := u.Query()
 	o := &seriesAssetsOptions{
 		values:       &q,
-		imageBaseUrl: "https://images-static.iracing.com/",
+		imageBaseUrl: "https://images-static.iracing.com/img/logos/series/",
 	}
 
 	for _, opt := range opts {
