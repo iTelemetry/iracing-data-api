@@ -65,15 +65,15 @@ func (c *irdataSeries) Assets(opts ...SeriesAssetsOption) (SeriesAssets, error) 
 	}
 
 	for key, series := range output {
-		if series.LargeImage != "" {
+		if series.LargeImage != "" && o.imageBaseUrl != "" {
 			series.LargeImage = o.imageBaseUrl + series.LargeImage
 		}
 
-		if series.SmallImage != "" {
+		if series.SmallImage != "" && o.imageBaseUrl != "" {
 			series.SmallImage = o.imageBaseUrl + series.SmallImage
 		}
 
-		if series.Logo != "" {
+		if series.Logo != "" && o.imageBaseUrl != "" {
 			series.Logo = o.imageBaseUrl + series.Logo
 		}
 
