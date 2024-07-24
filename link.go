@@ -14,11 +14,11 @@ type linkResponse struct {
 }
 
 func handleLink[T any](d *irdata, resp *http.Response, err error, output T) error {
-	defer resp.Body.Close()
-
 	if err != nil {
 		return &ConfigurationError{Msg: "unable to make link request", Trigger: err}
 	}
+
+	defer resp.Body.Close()
 
 	if resp.StatusCode == http.StatusServiceUnavailable {
 		return &ServiceUnavailableError{Msg: "service unavailable", Trigger: errors.New(resp.Status)}
