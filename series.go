@@ -28,7 +28,7 @@ type seriesAssetsOptions struct {
 type SeriesAssetsOption func(*seriesAssetsOptions)
 
 func WithImageBaseUrl(url string) SeriesAssetsOption {
-	if !strings.HasSuffix(url, "/") {
+	if url != "" && !strings.HasSuffix(url, "/") {
 		url = url + "/"
 	}
 
