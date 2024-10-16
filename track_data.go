@@ -62,3 +62,21 @@ type Track struct {
 type TrackType struct {
 	TrackType string `json:"track_type"`
 }
+
+type TrackAssets struct {
+	Coordinates     string            `json:"coordinates"`
+	Detail          *string           `json:"detail_copy"`
+	DetailTechSpecs *string           `json:"detail_tech_specs_copy"`
+	DetailVideo     *string           `json:"detail_video"`
+	Folder          string            `json:"folder"`
+	GalleryImages   string            `json:"gallery_images"`
+	GalleryPrefix   string            `json:"gallery_prefix"`
+	LargeImage      string            `json:"large_image"`
+	SmallImage      string            `json:"small_image"`
+	Logo            string            `json:"logo"`
+	North           string            `json:"north"`
+	NumSvgImages    int               `json:"num_svg_images"`
+	TrackID         int               `json:"track_id"`
+	TrackMap        string            `json:"track_map"`
+	TrackMapLayers  map[string]string `json:"track_map_layers"`
+}
