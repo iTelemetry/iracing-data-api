@@ -144,7 +144,7 @@ type ForecastOptions struct {
 type WeatherSummary struct {
 	MaxPrecipRate     float64 `json:"max_precip_rate"`
 	MaxPrecipRateDesc string  `json:"max_precip_rate_desc"`
-	PrecipChance      int     `json:"precip_chance"`
+	PrecipChance      float64 `json:"precip_chance"`
 	SkiesHigh         int     `json:"skies_high"`
 	SkiesLow          int     `json:"skies_low"`
 	TempHigh          float64 `json:"temp_high"`
