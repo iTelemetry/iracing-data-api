@@ -181,32 +181,38 @@ type Weather struct {
 }
 
 type SeriesSeasonSchedule struct {
-	SeasonID                int                  `json:"season_id"`
-	RaceWeekNum             int                  `json:"race_week_num"`
-	CarRestrictions         []any                `json:"car_restrictions"`
-	Category                string               `json:"category"`
-	CategoryID              int                  `json:"category_id"`
-	EnablePitlaneCollisions bool                 `json:"enable_pitlane_collisions"`
-	FullCourseCautions      bool                 `json:"full_course_cautions"`
-	QualAttached            bool                 `json:"qual_attached"`
-	RaceLapLimit            int                  `json:"race_lap_limit"`
-	RaceTimeLimit           int                  `json:"race_time_limit"` // minutes if > 0
-	RaceTimeDescriptors     []RaceTimeDescriptor `json:"race_time_descriptors"`
-	RaceWeekCars            []any                `json:"race_week_cars"`
-	RestartType             string               `json:"restart_type"`
-	ScheduleName            string               `json:"schedule_name"`
-	SeasonName              string               `json:"season_name"`
-	SeriesID                int                  `json:"series_id"`
-	SeriesName              string               `json:"series_name"`
-	ShortParadeLap          bool                 `json:"short_parade_lap"`
-	SimulatedTimeMultiplier int                  `json:"simulated_time_multiplier"`
-	SpecialEventType        any                  `json:"special_event_type"`
-	StartDate               string               `json:"start_date"`
-	StartType               string               `json:"start_type"`
-	StartZone               bool                 `json:"start_zone"`
-	Track                   Track                `json:"track"`
-	TrackState              TrackState           `json:"track_state"`
-	Weather                 Weather              `json:"weather"`
+	SeasonID                int                       `json:"season_id"`
+	RaceWeekNum             int                       `json:"race_week_num"`
+	CarRestrictions         []any                     `json:"car_restrictions"`
+	Category                string                    `json:"category"`
+	CategoryID              int                       `json:"category_id"`
+	EnablePitlaneCollisions bool                      `json:"enable_pitlane_collisions"`
+	FullCourseCautions      bool                      `json:"full_course_cautions"`
+	QualAttached            bool                      `json:"qual_attached"`
+	RaceLapLimit            int                       `json:"race_lap_limit"`
+	RaceTimeLimit           int                       `json:"race_time_limit"` // minutes if > 0
+	RaceTimeDescriptors     []RaceTimeDescriptor      `json:"race_time_descriptors"`
+	RaceWeekCars            []SeriesSeasonScheduleCar `json:"race_week_cars"`
+	RestartType             string                    `json:"restart_type"`
+	ScheduleName            string                    `json:"schedule_name"`
+	SeasonName              string                    `json:"season_name"`
+	SeriesID                int                       `json:"series_id"`
+	SeriesName              string                    `json:"series_name"`
+	ShortParadeLap          bool                      `json:"short_parade_lap"`
+	SimulatedTimeMultiplier int                       `json:"simulated_time_multiplier"`
+	SpecialEventType        any                       `json:"special_event_type"`
+	StartDate               string                    `json:"start_date"`
+	StartType               string                    `json:"start_type"`
+	StartZone               bool                      `json:"start_zone"`
+	Track                   Track                     `json:"track"`
+	TrackState              TrackState                `json:"track_state"`
+	Weather                 Weather                   `json:"weather"`
+}
+
+type SeriesSeasonScheduleCar struct {
+	CarID              int    `json:"car_id"`
+	CarName            string `json:"car_name"`
+	CarNameAbbreviated string `json:"car_name_abbreviated"`
 }
 
 type HeatSessionInfo struct {
