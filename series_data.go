@@ -201,7 +201,7 @@ type SeriesSeasonSchedule struct {
 	ShortParadeLap          bool                      `json:"short_parade_lap"`
 	SimulatedTimeMultiplier int                       `json:"simulated_time_multiplier"`
 	SpecialEventType        any                       `json:"special_event_type"`
-	StartDate               time.Time                 `json:"start_date"`
+	StartDate               string                    `json:"start_date"`
 	StartType               string                    `json:"start_type"`
 	StartZone               bool                      `json:"start_zone"`
 	Track                   Track                     `json:"track"`
