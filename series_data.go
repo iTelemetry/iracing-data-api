@@ -12,7 +12,9 @@ type SeriesAsset struct {
 	SmallImage string `json:"small_image"`
 }
 
-type Series []struct {
+type Series []SeriesItem
+
+type SeriesItem struct {
 	AllowedLicenses []AllowedLicense `json:"allowed_licenses"`
 	Category        string           `json:"category"`
 	CategoryID      int              `json:"category_id"`
