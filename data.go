@@ -10,6 +10,7 @@ type IRData interface {
 	IsLoggedIn() bool
 	GetLoginExpiration() time.Time
 
+	RateLimit() *RateLimit
 	Car() DataCar
 	CarClass() DataCarClass
 	Constant() DataConstant
@@ -48,6 +49,10 @@ func (d *irdata) needsReauthorization() bool {
 
 func (d *irdata) GetLoginExpiration() time.Time {
 	return d.expiration
+}
+
+func (d *irdata) RateLimit() *RateLimit {
+	return d.rateLimit
 }
 
 func (d *irdata) get(url string) (resp *http.Response, err error) {
