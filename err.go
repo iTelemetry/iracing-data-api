@@ -47,3 +47,12 @@ type LinkError struct {
 func (e *LinkError) Error() string {
 	return generateError(e.Msg, e.Trigger)
 }
+
+type RateLimitExceededError struct {
+	Msg     string
+	Trigger error
+}
+
+func (e *RateLimitExceededError) Error() string {
+	return generateError(e.Msg, e.Trigger)
+}

@@ -30,6 +30,8 @@ type irdata struct {
 
 	cookies    []*http.Cookie
 	expiration time.Time
+
+	rateLimit *RateLimit
 }
 
 func (d *irdata) Email() string {

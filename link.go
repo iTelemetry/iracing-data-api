@@ -20,12 +20,18 @@ func handleLink[T any](d *irdata, resp *http.Response, err error, output T) erro
 
 	defer resp.Body.Close()
 
+	if err = d.rateLimit.update(resp); err != nil {
+		return &ConfigurationError{Msg: "rate limit error", Trigger: err}
+	}
+
 	if resp.StatusCode == http.StatusServiceUnavailable {
 		return &ServiceUnavailableError{Msg: "service unavailable", Trigger: errors.New(resp.Status)}
 	} else if resp.StatusCode == http.StatusForbidden {
 		return &AuthenticationError{Msg: "forbidden"}
 	} else if resp.StatusCode == http.StatusUnauthorized {
 		return &AuthenticationError{Msg: "unauthorised"}
+	} else if resp.StatusCode == http.StatusTooManyRequests {
+		return &RateLimitExceededError{Msg: "too many requests"}
 	} else if resp.StatusCode != http.StatusOK {
 		return &ConfigurationError{Msg: "unexpected status code", Trigger: errors.New(resp.Status)}
 	}
