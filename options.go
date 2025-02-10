@@ -1,7 +1,9 @@
 package irdata
 
 import (
+	"fmt"
 	"net/http"
+	"sync"
 	"time"
 )
 
@@ -62,5 +64,55 @@ type OptionsAutoReauthorizeThreshold struct {
 
 func (o OptionsAutoReauthorizeThreshold) Apply(data *irdata) error {
 	data.reauthorizeThreshold = o.ReauthorizeThreshold
+	return nil
+}
+
+func WithRateLimitWait(maxWait time.Duration) Options {
+	return OptionsRateLimitWait{MaxWait: maxWait}
+}
+
+type OptionsRateLimitWait struct {
+	MaxWait time.Duration
+}
+
+func (o OptionsRateLimitWait) Apply(data *irdata) error {
+	data.rateLimit.wait = true
+	data.rateLimit.waitTimeout = o.MaxWait
+	return nil
+}
+
+func WithRateLimitLocking(enabled bool) Options {
+	return OptionsRateLimitLocking{Enabled: enabled}
+}
+
+type OptionsRateLimitLocking struct {
+	Enabled bool
+}
+
+func (o OptionsRateLimitLocking) Apply(data *irdata) error {
+	data.rateLimit.locking = o.Enabled
+	if !o.Enabled {
+		data.rateLimit.lock = nil
+	} else {
+		data.rateLimit.lock = new(sync.Mutex)
+	}
+
+	return nil
+}
+
+func WithRateLimitRetry(attempts int) Options {
+	return OptionsRateLimitRetry{Attempts: attempts}
+}
+
+type OptionsRateLimitRetry struct {
+	Attempts int
+}
+
+func (o OptionsRateLimitRetry) Apply(data *irdata) error {
+	if o.Attempts < 1 {
+		return fmt.Errorf("attempts must be greater than zero")
+	}
+
+	data.rateLimit.attempts = o.Attempts
 	return nil
 }

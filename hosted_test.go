@@ -1,6 +1,7 @@
 package irdata
 
 import (
+	"context"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -9,7 +10,7 @@ func TestReturnsHostedSessions(t *testing.T) {
 	api := DefaultClient.Hosted()
 	assert.NotNil(t, api)
 
-	r, err := api.GetSessions()
+	r, err := api.GetSessions(context.TODO())
 	assert.NoError(t, err)
 	assert.NotEmpty(t, r)
 	assert.True(t, r.Success)
@@ -74,7 +75,7 @@ func TestReturnsCombinedHostedSessions(t *testing.T) {
 				opts = append(opts, &PackageIDOption{PackageID: test.packageID})
 			}
 
-			r, err := api.GetCombinedSessions(opts...)
+			r, err := api.GetCombinedSessions(context.TODO(), opts...)
 			assert.NoError(t, err)
 			assert.True(t, r.Success)
 

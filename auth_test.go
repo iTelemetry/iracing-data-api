@@ -28,7 +28,7 @@ func init() {
 	ValidPassword = password
 
 	var err error
-	DefaultClient, err = Login(ValidEmail, ValidPassword)
+	DefaultClient, err = Login(ValidEmail, ValidPassword, WithRateLimitWait(60*time.Second), WithRateLimitLocking(true), WithRateLimitRetry(5))
 	if err != nil {
 		panic(err)
 	}

@@ -1,6 +1,7 @@
 package irdata
 
 import (
+	"context"
 	"fmt"
 	"github.com/stretchr/testify/assert"
 	"strings"
@@ -11,7 +12,7 @@ func TestReturnsSeriesAssets(t *testing.T) {
 	api := DefaultClient.Series()
 	assert.NotNil(t, api)
 
-	values, err := api.Assets()
+	values, err := api.Assets(context.TODO())
 	assert.NoError(t, err)
 	assert.NotEmpty(t, values)
 
@@ -26,7 +27,7 @@ func TestReturnsSeriesAssetsWithImageBaseUrl(t *testing.T) {
 	assert.NotNil(t, api)
 
 	url := "https://test.itelemetry.app"
-	values, err := api.Assets(WithImageBaseUrl(url))
+	values, err := api.Assets(context.TODO(), WithImageBaseUrl(url))
 	assert.NoError(t, err)
 	assert.NotEmpty(t, values)
 
@@ -52,7 +53,7 @@ func TestReturnsSeries(t *testing.T) {
 	api := DefaultClient.Series()
 	assert.NotNil(t, api)
 
-	values, err := api.Get()
+	values, err := api.Get(context.TODO())
 	assert.NoError(t, err)
 	assert.NotEmpty(t, values)
 
@@ -66,7 +67,7 @@ func TestReturnsSeriesSeasons(t *testing.T) {
 	api := DefaultClient.Series()
 	assert.NotNil(t, api)
 
-	values, err := api.Seasons()
+	values, err := api.Seasons(context.TODO())
 	assert.NoError(t, err)
 	assert.NotEmpty(t, values)
 

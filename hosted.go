@@ -1,6 +1,7 @@
 package irdata
 
 import (
+	"context"
 	"fmt"
 	"net/url"
 )
@@ -14,16 +15,16 @@ type irdataHosted struct {
 }
 
 type DataHosted interface {
-	GetSessions() (HostedSessions, error)
-	GetCombinedSessions(opts ...HostedCombinedSessionsOption) (HostedSessions, error)
+	GetSessions(ctx context.Context) (HostedSessions, error)
+	GetCombinedSessions(ctx context.Context, opts ...HostedCombinedSessionsOption) (HostedSessions, error)
 }
 
-func (c *irdataHosted) GetSessions() (HostedSessions, error) {
+func (c *irdataHosted) GetSessions(ctx context.Context) (HostedSessions, error) {
 	d := c.parent
 
-	resp, err := d.get(fmt.Sprintf("%s/data/hosted/sessions", d.membersUrl))
+	resp, err := d.get(ctx, fmt.Sprintf("%s/data/hosted/sessions", d.membersUrl))
 	var output HostedSessions
-	err = handleLink(d, resp, err, &output)
+	err = handleLink(ctx, d, resp, err, &output)
 	if err != nil {
 		return HostedSessions{}, err
 	}
@@ -43,7 +44,7 @@ func (o *PackageIDOption) ApplyHostedCombinedSessions(v *url.Values) {
 	v.Set("package_id", fmt.Sprintf("%d", o.PackageID))
 }
 
-func (c *irdataHosted) GetCombinedSessions(opts ...HostedCombinedSessionsOption) (HostedSessions, error) {
+func (c *irdataHosted) GetCombinedSessions(ctx context.Context, opts ...HostedCombinedSessionsOption) (HostedSessions, error) {
 	d := c.parent
 
 	u, err := url.Parse(fmt.Sprintf("%s/data/hosted/combined_sessions", d.membersUrl))
@@ -58,9 +59,9 @@ func (c *irdataHosted) GetCombinedSessions(opts ...HostedCombinedSessionsOption)
 
 	u.RawQuery = q.Encode()
 
-	resp, err := d.get(u.String())
+	resp, err := d.get(ctx, u.String())
 	var output HostedSessions
-	err = handleLink(d, resp, err, &output)
+	err = handleLink(ctx, d, resp, err, &output)
 	if err != nil {
 		return HostedSessions{}, err
 	}

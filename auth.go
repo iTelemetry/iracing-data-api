@@ -62,7 +62,9 @@ func Login(email string, password string, options ...Options) (IRData, error) {
 
 		email:        email,
 		passwordHash: encodedHash,
-		rateLimit:    &RateLimit{},
+		rateLimit: &RateLimit{
+			remaining: 1,
+		},
 	}
 
 	for _, option := range options {

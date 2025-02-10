@@ -1,6 +1,7 @@
 package irdata
 
 import (
+	"context"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -12,7 +13,7 @@ func TestReturnsSeasonList(t *testing.T) {
 	year := 2024
 	quarter := 2
 
-	values, err := api.List(year, quarter)
+	values, err := api.List(context.TODO(), year, quarter)
 	assert.NoError(t, err)
 	assert.NotEmpty(t, values)
 	assert.NotEmpty(t, values.Seasons)
@@ -31,7 +32,7 @@ func TestReturnsSeasonRaceGuide(t *testing.T) {
 	api := DefaultClient.Season()
 	assert.NotNil(t, api)
 
-	values, err := api.RaceGuide()
+	values, err := api.RaceGuide(context.TODO())
 	assert.NoError(t, err)
 	assert.NotEmpty(t, values)
 	assert.NotEmpty(t, values.Sessions)
@@ -46,7 +47,7 @@ func TestReturnsSeasonSpectatorSubSessionIDs(t *testing.T) {
 	api := DefaultClient.Season()
 	assert.NotNil(t, api)
 
-	values, err := api.SpectatorSubSessionIDs()
+	values, err := api.SpectatorSubSessionIDs(context.TODO())
 	assert.NoError(t, err)
 	assert.NotEmpty(t, values)
 	assert.NotEmpty(t, values.SubsessionIds)
@@ -58,7 +59,7 @@ func TestReturnsSeasonSpectatorSubSessionIDsWithEventTypes(t *testing.T) {
 	assert.NotNil(t, api)
 
 	opts := []int{2, 4}
-	values, err := api.SpectatorSubSessionIDs(&EventTypes{EventTypes: opts})
+	values, err := api.SpectatorSubSessionIDs(context.TODO(), &EventTypes{EventTypes: opts})
 	assert.NoError(t, err)
 	assert.NotEmpty(t, values)
 	assert.True(t, values.Success)

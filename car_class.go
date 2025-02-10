@@ -1,6 +1,9 @@
 package irdata
 
-import "fmt"
+import (
+	"context"
+	"fmt"
+)
 
 func (d *irdata) CarClass() DataCarClass {
 	return &irdataCarClass{parent: d}
@@ -11,15 +14,15 @@ type irdataCarClass struct {
 }
 
 type DataCarClass interface {
-	Get() ([]CarClass, error)
+	Get(ctx context.Context) ([]CarClass, error)
 }
 
-func (c *irdataCarClass) Get() ([]CarClass, error) {
+func (c *irdataCarClass) Get(ctx context.Context) ([]CarClass, error) {
 	d := c.parent
 
-	resp, err := d.get(fmt.Sprintf("%s/data/carclass/get", d.membersUrl))
+	resp, err := d.get(ctx, fmt.Sprintf("%s/data/carclass/get", d.membersUrl))
 	var output []CarClass
-	err = handleLink(d, resp, err, &output)
+	err = handleLink(ctx, d, resp, err, &output)
 	if err != nil {
 		return nil, err
 	}

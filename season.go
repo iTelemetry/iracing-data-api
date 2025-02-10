@@ -1,6 +1,7 @@
 package irdata
 
 import (
+	"context"
 	"fmt"
 	"net/url"
 	"strings"
@@ -16,12 +17,12 @@ type irdataSeason struct {
 }
 
 type DataSeason interface {
-	List(year int, quarter int) (Seasons, error)
-	RaceGuide(opts ...RaceGuideOption) (RaceGuide, error)
-	SpectatorSubSessionIDs(opts ...SpectatorSubSessionIDsOption) (SpectatorSubSessionIDs, error)
+	List(ctx context.Context, year int, quarter int) (Seasons, error)
+	RaceGuide(ctx context.Context, opts ...RaceGuideOption) (RaceGuide, error)
+	SpectatorSubSessionIDs(ctx context.Context, opts ...SpectatorSubSessionIDsOption) (SpectatorSubSessionIDs, error)
 }
 
-func (c *irdataSeason) List(year int, quarter int) (Seasons, error) {
+func (c *irdataSeason) List(ctx context.Context, year int, quarter int) (Seasons, error) {
 	d := c.parent
 
 	u, err := url.Parse(fmt.Sprintf("%s/data/season/list", d.membersUrl))
@@ -34,9 +35,9 @@ func (c *irdataSeason) List(year int, quarter int) (Seasons, error) {
 	q.Set("season_quarter", fmt.Sprintf("%d", quarter))
 	u.RawQuery = q.Encode()
 
-	resp, err := d.get(u.String())
+	resp, err := d.get(ctx, u.String())
 	var output Seasons
-	err = handleLink(d, resp, err, &output)
+	err = handleLink(ctx, d, resp, err, &output)
 	if err != nil {
 		return Seasons{}, err
 	}
@@ -64,7 +65,7 @@ func (o *IncludeEndAfterFromOption) ApplyRaceGuide(v *url.Values) {
 	v.Set("include_end_after_from", fmt.Sprintf("%t", o.Include))
 }
 
-func (c *irdataSeason) RaceGuide(opts ...RaceGuideOption) (RaceGuide, error) {
+func (c *irdataSeason) RaceGuide(ctx context.Context, opts ...RaceGuideOption) (RaceGuide, error) {
 	d := c.parent
 
 	u, err := url.Parse(fmt.Sprintf("%s/data/season/race_guide", d.membersUrl))
@@ -79,9 +80,9 @@ func (c *irdataSeason) RaceGuide(opts ...RaceGuideOption) (RaceGuide, error) {
 
 	u.RawQuery = q.Encode()
 
-	resp, err := d.get(u.String())
+	resp, err := d.get(ctx, u.String())
 	var output RaceGuide
-	err = handleLink(d, resp, err, &output)
+	err = handleLink(ctx, d, resp, err, &output)
 	if err != nil {
 		return RaceGuide{}, err
 	}
@@ -106,7 +107,7 @@ func (o *EventTypes) ApplySpectatorSubSessionIDs(v *url.Values) {
 	v.Set("event_types", fmt.Sprintf("%s", strings.Join(str, ",")))
 }
 
-func (c *irdataSeason) SpectatorSubSessionIDs(opts ...SpectatorSubSessionIDsOption) (SpectatorSubSessionIDs, error) {
+func (c *irdataSeason) SpectatorSubSessionIDs(ctx context.Context, opts ...SpectatorSubSessionIDsOption) (SpectatorSubSessionIDs, error) {
 	d := c.parent
 
 	u, err := url.Parse(fmt.Sprintf("%s/data/season/spectator_subsessionids", d.membersUrl))
@@ -121,9 +122,9 @@ func (c *irdataSeason) SpectatorSubSessionIDs(opts ...SpectatorSubSessionIDsOpti
 
 	u.RawQuery = q.Encode()
 
-	resp, err := d.get(u.String())
+	resp, err := d.get(ctx, u.String())
 	var output SpectatorSubSessionIDs
-	err = handleLink(d, resp, err, &output)
+	err = handleLink(ctx, d, resp, err, &output)
 	if err != nil {
 		return SpectatorSubSessionIDs{}, err
 	}

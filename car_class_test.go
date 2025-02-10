@@ -1,6 +1,7 @@
 package irdata
 
 import (
+	"context"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -9,7 +10,7 @@ func TestReturnsCarClasses(t *testing.T) {
 	api := DefaultClient.CarClass()
 	assert.NotNil(t, api)
 
-	values, err := api.Get()
+	values, err := api.Get(context.TODO())
 	assert.NoError(t, err)
 	assert.NotEmpty(t, values)
 

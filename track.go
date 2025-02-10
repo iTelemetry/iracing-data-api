@@ -1,6 +1,7 @@
 package irdata
 
 import (
+	"context"
 	"fmt"
 )
 
@@ -13,16 +14,16 @@ type irdataTrack struct {
 }
 
 type DataTrack interface {
-	Get() ([]Track, error)
-	Assets() (map[string]TrackAssets, error)
+	Get(ctx context.Context) ([]Track, error)
+	Assets(ctx context.Context) (map[string]TrackAssets, error)
 }
 
-func (c *irdataTrack) Get() ([]Track, error) {
+func (c *irdataTrack) Get(ctx context.Context) ([]Track, error) {
 	d := c.parent
 
-	resp, err := d.get(fmt.Sprintf("%s/data/track/get", d.membersUrl))
+	resp, err := d.get(ctx, fmt.Sprintf("%s/data/track/get", d.membersUrl))
 	var output []Track
-	err = handleLink(d, resp, err, &output)
+	err = handleLink(ctx, d, resp, err, &output)
 	if err != nil {
 		return nil, err
 	}
@@ -30,12 +31,12 @@ func (c *irdataTrack) Get() ([]Track, error) {
 	return output, nil
 }
 
-func (c *irdataTrack) Assets() (map[string]TrackAssets, error) {
+func (c *irdataTrack) Assets(ctx context.Context) (map[string]TrackAssets, error) {
 	d := c.parent
 
-	resp, err := d.get(fmt.Sprintf("%s/data/track/assets", d.membersUrl))
+	resp, err := d.get(ctx, fmt.Sprintf("%s/data/track/assets", d.membersUrl))
 	var output map[string]TrackAssets
-	err = handleLink(d, resp, err, &output)
+	err = handleLink(ctx, d, resp, err, &output)
 	if err != nil {
 		return nil, err
 	}

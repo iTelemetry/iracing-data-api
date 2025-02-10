@@ -1,6 +1,8 @@
 package irdata
 
 import (
+	"context"
+	"fmt"
 	"net/http"
 	"time"
 )
@@ -55,12 +57,36 @@ func (d *irdata) RateLimit() *RateLimit {
 	return d.rateLimit
 }
 
-func (d *irdata) get(url string) (resp *http.Response, err error) {
-	if err = d.Reauthenticate(); err != nil {
-		return nil, err
+func (d *irdata) get(ctx context.Context, url string) (resp *http.Response, err error) {
+	for i := 0; i < d.rateLimit.Attempts(); i++ {
+		//if i > 0 {
+		//	slog.Debug("retrying", "attempt", i, "request", url)
+		//}
+
+		if err = d.RateLimit().Wait(ctx); err != nil {
+			return nil, fmt.Errorf("waiting for rate limit: %w", err)
+		}
+
+		if err = d.Reauthenticate(); err != nil {
+			return nil, err
+		}
+
+		var req *http.Request
+		req, err = http.NewRequest("GET", url, nil)
+		if err != nil {
+			return nil, fmt.Errorf("creating request: %w", err)
+		}
+
+		req.WithContext(ctx)
+		resp, err = d.client.Do(req)
+		if err == nil && resp.StatusCode == http.StatusTooManyRequests {
+			continue
+		} else {
+			return
+		}
 	}
 
-	return d.client.Get(url)
+	return
 }
 
 func (d *irdata) Reauthenticate() error {

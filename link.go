@@ -1,6 +1,7 @@
 package irdata
 
 import (
+	"context"
 	"encoding/json"
 	"errors"
 	"io"
@@ -13,7 +14,7 @@ type linkResponse struct {
 	Expires time.Time `json:"expires"`
 }
 
-func handleLink[T any](d *irdata, resp *http.Response, err error, output T) error {
+func handleLink[T any](ctx context.Context, d *irdata, resp *http.Response, err error, output T) error {
 	if err != nil {
 		return &ConfigurationError{Msg: "unable to make link request", Trigger: err}
 	}

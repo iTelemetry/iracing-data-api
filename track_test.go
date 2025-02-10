@@ -1,6 +1,7 @@
 package irdata
 
 import (
+	"context"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -9,7 +10,7 @@ func TestReturnsTracks(t *testing.T) {
 	api := DefaultClient.Track()
 	assert.NotNil(t, api)
 
-	values, err := api.Get()
+	values, err := api.Get(context.TODO())
 	assert.NoError(t, err)
 	assert.NotEmpty(t, values)
 
@@ -24,7 +25,7 @@ func TestReturnsTrackAssets(t *testing.T) {
 	api := DefaultClient.Track()
 	assert.NotNil(t, api)
 
-	values, err := api.Assets()
+	values, err := api.Assets(context.TODO())
 	assert.NoError(t, err)
 	assert.NotEmpty(t, values)
 

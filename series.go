@@ -1,6 +1,7 @@
 package irdata
 
 import (
+	"context"
 	"fmt"
 	"net/url"
 	"strings"
@@ -15,9 +16,9 @@ type irdataSeries struct {
 }
 
 type DataSeries interface {
-	Assets(opts ...SeriesAssetsOption) (SeriesAssets, error)
-	Get() (Series, error)
-	Seasons(opts ...SeriesSeasonsOption) (SeriesSeasons, error)
+	Assets(ctx context.Context, opts ...SeriesAssetsOption) (SeriesAssets, error)
+	Get(ctx context.Context) (Series, error)
+	Seasons(ctx context.Context, opts ...SeriesSeasonsOption) (SeriesSeasons, error)
 }
 
 type seriesAssetsOptions struct {
@@ -37,7 +38,7 @@ func WithImageBaseUrl(url string) SeriesAssetsOption {
 	}
 }
 
-func (c *irdataSeries) Assets(opts ...SeriesAssetsOption) (SeriesAssets, error) {
+func (c *irdataSeries) Assets(ctx context.Context, opts ...SeriesAssetsOption) (SeriesAssets, error) {
 	d := c.parent
 
 	u, err := url.Parse(fmt.Sprintf("%s/data/series/assets", d.membersUrl))
@@ -57,9 +58,9 @@ func (c *irdataSeries) Assets(opts ...SeriesAssetsOption) (SeriesAssets, error) 
 
 	u.RawQuery = q.Encode()
 
-	resp, err := d.get(u.String())
+	resp, err := d.get(ctx, u.String())
 	var output SeriesAssets
-	err = handleLink(d, resp, err, &output)
+	err = handleLink(ctx, d, resp, err, &output)
 	if err != nil {
 		return SeriesAssets{}, err
 	}
@@ -83,7 +84,7 @@ func (c *irdataSeries) Assets(opts ...SeriesAssetsOption) (SeriesAssets, error) 
 	return output, nil
 }
 
-func (c *irdataSeries) Get() (Series, error) {
+func (c *irdataSeries) Get(ctx context.Context) (Series, error) {
 	d := c.parent
 
 	u, err := url.Parse(fmt.Sprintf("%s/data/series/get", d.membersUrl))
@@ -94,9 +95,9 @@ func (c *irdataSeries) Get() (Series, error) {
 	q := u.Query()
 	u.RawQuery = q.Encode()
 
-	resp, err := d.get(u.String())
+	resp, err := d.get(ctx, u.String())
 	var output Series
-	err = handleLink(d, resp, err, &output)
+	err = handleLink(ctx, d, resp, err, &output)
 	if err != nil {
 		return Series{}, err
 	}
@@ -116,7 +117,7 @@ func WithIncludeSeries(include bool) SeriesSeasonsOption {
 	}
 }
 
-func (c *irdataSeries) Seasons(opts ...SeriesSeasonsOption) (SeriesSeasons, error) {
+func (c *irdataSeries) Seasons(ctx context.Context, opts ...SeriesSeasonsOption) (SeriesSeasons, error) {
 	d := c.parent
 
 	u, err := url.Parse(fmt.Sprintf("%s/data/series/seasons", d.membersUrl))
@@ -135,9 +136,9 @@ func (c *irdataSeries) Seasons(opts ...SeriesSeasonsOption) (SeriesSeasons, erro
 
 	u.RawQuery = q.Encode()
 
-	resp, err := d.get(u.String())
+	resp, err := d.get(ctx, u.String())
 	var output SeriesSeasons
-	err = handleLink(d, resp, err, &output)
+	err = handleLink(ctx, d, resp, err, &output)
 	if err != nil {
 		return SeriesSeasons{}, err
 	}
