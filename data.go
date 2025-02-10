@@ -2,6 +2,7 @@ package irdata
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"net/http"
 	"time"
@@ -67,8 +68,11 @@ func (d *irdata) get(ctx context.Context, url string) (resp *http.Response, err 
 			return nil, fmt.Errorf("waiting for rate limit: %w", err)
 		}
 
-		if err = d.Reauthenticate(); err != nil {
-			return nil, err
+		tmr := &RateLimitExceededError{}
+		if err = d.Reauthenticate(); err != nil && errors.As(err, &tmr) {
+			continue
+		} else if err != nil {
+			return
 		}
 
 		var req *http.Request
@@ -79,7 +83,7 @@ func (d *irdata) get(ctx context.Context, url string) (resp *http.Response, err 
 
 		req.WithContext(ctx)
 		resp, err = d.client.Do(req)
-		if err == nil && resp.StatusCode == http.StatusTooManyRequests {
+		if resp != nil && resp.StatusCode == http.StatusTooManyRequests {
 			continue
 		} else {
 			return

@@ -121,10 +121,17 @@ func (d *irdata) Authenticate() error {
 		return &ConfigurationError{Msg: "unable to read authentication response", Trigger: err}
 	}
 
+	err = d.RateLimit().update(resp)
+	if err != nil {
+		return &ConfigurationError{Msg: "unable to update rate limit", Trigger: err}
+	}
+
 	if resp.StatusCode == 401 {
 		return &AuthenticationError{Msg: "invalid credentials"}
 	} else if resp.StatusCode == 503 {
 		return &ServiceUnavailableError{Msg: "service unavailable"}
+	} else if resp.StatusCode == 209 {
+		return &RateLimitExceededError{Msg: "too many requests"}
 	} else if resp.StatusCode != 200 {
 		return &ServiceUnavailableError{Msg: "unexpected error", Trigger: errors.New(resp.Status)}
 	}
