@@ -107,25 +107,25 @@ type ResultSessionResult struct {
 }
 
 type ResultSessionWeather struct {
-	AvgSkies                 int     `json:"avg_skies"`
+	AvgSkies                 float64 `json:"avg_skies"`
 	AvgCloudCoverPct         float64 `json:"avg_cloud_cover_pct"`
 	MinCloudCoverPct         float64 `json:"min_cloud_cover_pct"`
 	MaxCloudCoverPct         float64 `json:"max_cloud_cover_pct"`
-	TempUnits                int     `json:"temp_units"`
+	TempUnits                float64 `json:"temp_units"`
 	AvgTemp                  float64 `json:"avg_temp"`
 	MinTemp                  float64 `json:"min_temp"`
 	MaxTemp                  float64 `json:"max_temp"`
-	AvgRelHumidity           int     `json:"avg_rel_humidity"`
-	WindUnits                int     `json:"wind_units"`
+	AvgRelHumidity           float64 `json:"avg_rel_humidity"`
+	WindUnits                float64 `json:"wind_units"`
 	AvgWindSpeed             float64 `json:"avg_wind_speed"`
 	MinWindSpeed             float64 `json:"min_wind_speed"`
 	MaxWindSpeed             float64 `json:"max_wind_speed"`
-	AvgWindDir               int     `json:"avg_wind_dir"`
+	AvgWindDir               float64 `json:"avg_wind_dir"`
 	MaxFog                   float64 `json:"max_fog"`
-	FogTimePct               int     `json:"fog_time_pct"`
-	PrecipTimePct            int     `json:"precip_time_pct"`
-	PrecipMm                 int     `json:"precip_mm"`
-	PrecipMm2HrBeforeSession int     `json:"precip_mm2hr_before_session"`
+	FogTimePct               float64 `json:"fog_time_pct"`
+	PrecipTimePct            float64 `json:"precip_time_pct"`
+	PrecipMm                 float64 `json:"precip_mm"`
+	PrecipMm2HrBeforeSession float64 `json:"precip_mm2hr_before_session"`
 	SimulatedStartTime       string  `json:"simulated_start_time"`
 }
 
@@ -134,14 +134,14 @@ type ResultSubSessionResult struct {
 	DisplayName             string       `json:"display_name"`
 	AggregateChampPoints    int          `json:"aggregate_champ_points"`
 	Ai                      bool         `json:"ai"`
-	AverageLap              int          `json:"average_lap"`
+	AverageLap              float64      `json:"average_lap"`
 	BestLapNum              int          `json:"best_lap_num"`
-	BestLapTime             int          `json:"best_lap_time"`
+	BestLapTime             float64      `json:"best_lap_time"`
 	BestNlapsNum            int          `json:"best_nlaps_num"`
-	BestNlapsTime           int          `json:"best_nlaps_time"`
+	BestNlapsTime           float64      `json:"best_nlaps_time"`
 	BestQualLapAt           time.Time    `json:"best_qual_lap_at"`
 	BestQualLapNum          int          `json:"best_qual_lap_num"`
-	BestQualLapTime         int          `json:"best_qual_lap_time"`
+	BestQualLapTime         float64      `json:"best_qual_lap_time"`
 	CarClassID              int          `json:"car_class_id"`
 	CarClassName            string       `json:"car_class_name"`
 	CarClassShortName       string       `json:"car_class_short_name"`
