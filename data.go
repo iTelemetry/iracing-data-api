@@ -21,6 +21,7 @@ type IRData interface {
 	Track() DataTrack
 	Season() DataSeason
 	Series() DataSeries
+	Results() DataResults
 }
 
 type irdata struct {
