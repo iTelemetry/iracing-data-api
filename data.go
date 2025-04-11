@@ -18,6 +18,7 @@ type IRData interface {
 	CarClass() DataCarClass
 	Constant() DataConstant
 	Hosted() DataHosted
+	League() DataLeague
 	Track() DataTrack
 	Season() DataSeason
 	Series() DataSeries
