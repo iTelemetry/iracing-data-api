@@ -50,3 +50,76 @@ func TestReturnsLeagueWithIncludeLicenses(t *testing.T) {
 	assert.NotEmpty(t, league.LeagueID)
 	assert.NotEmpty(t, league.LeagueName)
 }
+
+func TestReturnsLeagueSeasons(t *testing.T) {
+	api := DefaultClient.League()
+	assert.NotNil(t, api)
+
+	seasons, err := api.Seasons(context.TODO(), 6529)
+	assert.NoError(t, err)
+	assert.NotEmpty(t, seasons)
+
+	// Check that essential fields are not empty
+	assert.NotEmpty(t, seasons.LeagueID)
+	assert.NotEmpty(t, seasons.Seasons)
+	assert.Equal(t, 6529, seasons.LeagueID)
+
+	// Check that at least one season has essential fields
+	if len(seasons.Seasons) > 0 {
+		season := seasons.Seasons[0]
+		assert.NotEmpty(t, season.LeagueID)
+		assert.NotEmpty(t, season.SeasonID)
+		assert.NotEmpty(t, season.SeasonName)
+	}
+}
+
+func TestReturnsLeagueSeasonsWithRetired(t *testing.T) {
+	api := DefaultClient.League()
+	assert.NotNil(t, api)
+
+	seasons, err := api.Seasons(context.TODO(), 6529, &RetiredOption{Retired: true})
+	assert.NoError(t, err)
+	assert.NotEmpty(t, seasons)
+
+	// Check that essential fields are not empty
+	assert.NotEmpty(t, seasons.LeagueID)
+	assert.NotEmpty(t, seasons.Seasons)
+	assert.Equal(t, 6529, seasons.LeagueID)
+}
+
+func TestReturnsLeagueSeasonSessions(t *testing.T) {
+	api := DefaultClient.League()
+	assert.NotNil(t, api)
+
+	sessions, err := api.SeasonSessions(context.TODO(), 6529, 110898)
+	assert.NoError(t, err)
+	assert.NotEmpty(t, sessions)
+
+	// Check that essential fields are not empty
+	assert.NotEmpty(t, sessions.Sessions)
+
+	// Check that at least one session has essential fields
+	if len(sessions.Sessions) > 0 {
+		session := sessions.Sessions[0]
+		assert.NotEmpty(t, session.LeagueID)
+		assert.NotEmpty(t, session.LeagueSeasonID)
+		assert.NotEmpty(t, session.SessionID)
+	}
+}
+
+func TestReturnsLeagueSeasonSessionsWithResultsOnly(t *testing.T) {
+	api := DefaultClient.League()
+	assert.NotNil(t, api)
+
+	sessions, err := api.SeasonSessions(context.TODO(), 6529, 110898, &ResultsOnlyOption{ResultsOnly: true})
+	assert.NoError(t, err)
+	assert.NotEmpty(t, sessions)
+
+	// Check that essential fields are not empty
+	assert.NotEmpty(t, sessions.Sessions)
+
+	// Check that all sessions have results
+	for _, session := range sessions.Sessions {
+		assert.True(t, session.HasResults)
+	}
+}

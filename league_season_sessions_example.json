@@ -1,0 +1,4692 @@
+{
+  "sessions": [
+    {
+      "cars": [
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 2268,
+          "car_class_name": "GT4 Class"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 3189,
+          "car_class_name": "Touring Car"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 2268,
+          "car_class_name": "GT4 Class"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 2268,
+          "car_class_name": "GT4 Class"
+        },
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 2708,
+          "car_class_name": "GT3 Class"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 2708,
+          "car_class_name": "GT3 Class"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 2708,
+          "car_class_name": "GT3 Class"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 2708,
+          "car_class_name": "GT3 Class"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 3189,
+          "car_class_name": "Touring Car"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 2708,
+          "car_class_name": "GT3 Class"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 3189,
+          "car_class_name": "Touring Car"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 2708,
+          "car_class_name": "GT3 Class"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 2708,
+          "car_class_name": "GT3 Class"
+        }
+      ],
+      "driver_changes": false,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-09-04T18:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4095181,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 249144733,
+      "status": 4,
+      "subsession_id": 71206114,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "Grand Prix",
+        "track_id": 509,
+        "track_name": "Algarve International Circuit"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 2,
+          "skies_low": 0,
+          "temp_high": 22.4,
+          "temp_low": 20.8,
+          "temp_units": 1,
+          "wind_high": 12.3,
+          "wind_low": 10.6,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": 595283,
+      "winner_name": "Patrick Gannon"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-09-05T22:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4095478,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 249159193,
+      "status": 4,
+      "subsession_id": 71221299,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "Grand Prix",
+        "track_id": 509,
+        "track_name": "Algarve International Circuit"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 1,
+          "skies_low": 1,
+          "temp_high": 23.2,
+          "temp_low": 20.9,
+          "temp_units": 1,
+          "wind_high": 11.5,
+          "wind_low": 9,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -381482,
+      "winner_name": "Fabulous Fordskin Racing"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-09-06T18:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4095482,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 249169174,
+      "status": 4,
+      "subsession_id": 71231020,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "Grand Prix",
+        "track_id": 509,
+        "track_name": "Algarve International Circuit"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 1,
+          "skies_low": 1,
+          "temp_high": 24,
+          "temp_low": 21.6,
+          "temp_units": 1,
+          "wind_high": 7.1,
+          "wind_low": 4.8,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -379142,
+      "winner_name": "RPM Racing Black FTR"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-09-07T12:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 120,
+      "private_session_id": 4095487,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 249178714,
+      "status": 4,
+      "subsession_id": 71240527,
+      "team_entry_count": 0,
+      "time_limit": 120,
+      "track": {
+        "config_name": "Grand Prix",
+        "track_id": 509,
+        "track_name": "Algarve International Circuit"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 1,
+          "skies_low": 0,
+          "temp_high": 19.9,
+          "temp_low": 19.3,
+          "temp_units": 1,
+          "wind_high": 22.4,
+          "wind_low": 19.1,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -224712,
+      "winner_name": "Enosis eSports GT3"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 54762,
+          "car_class_name": "FTR Events TCR Class"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 54764,
+          "car_class_name": "FTR Events GT3 Class"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 54762,
+          "car_class_name": "FTR Events TCR Class"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 54764,
+          "car_class_name": "FTR Events GT3 Class"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 54764,
+          "car_class_name": "FTR Events GT3 Class"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 54762,
+          "car_class_name": "FTR Events TCR Class"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 54764,
+          "car_class_name": "FTR Events GT3 Class"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 54763,
+          "car_class_name": "FTR Events GT4 Class"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 54764,
+          "car_class_name": "FTR Events GT3 Class"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 54763,
+          "car_class_name": "FTR Events GT4 Class"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 54763,
+          "car_class_name": "FTR Events GT4 Class"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 54764,
+          "car_class_name": "FTR Events GT3 Class"
+        },
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 54764,
+          "car_class_name": "FTR Events GT3 Class"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-09-07T14:45:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 30,
+      "private_session_id": 4087300,
+      "qualify_laps": 0,
+      "qualify_length": 45,
+      "race_laps": 0,
+      "race_length": 360,
+      "session_id": 249179712,
+      "status": 4,
+      "subsession_id": 71241617,
+      "team_entry_count": 0,
+      "time_limit": 480,
+      "track": {
+        "config_name": "Grand Prix",
+        "track_id": 509,
+        "track_name": "Algarve International Circuit"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 0,
+        "temp_value": 78,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 3,
+          "skies_low": 1,
+          "temp_high": 22.1,
+          "temp_low": 19.9,
+          "temp_units": 1,
+          "wind_high": 26.4,
+          "wind_low": 19.7,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 0,
+        "wind_value": 2
+      },
+      "winner_id": -378454,
+      "winner_name": "RPM Racing Red FTR"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-10-09T18:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4148001,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 252395654,
+      "status": 4,
+      "subsession_id": 71940541,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "Belle Isle",
+        "track_id": 319,
+        "track_name": "Detroit Grand Prix at Belle Isle"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 8,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 1,
+          "skies_low": 1,
+          "temp_high": 20.2,
+          "temp_low": 19.9,
+          "temp_units": 1,
+          "wind_high": 17.9,
+          "wind_low": 17.6,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -379142,
+      "winner_name": "RPM Racing Black FTR"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-10-10T22:00:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4150568,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 252517061,
+      "status": 4,
+      "subsession_id": 71964957,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "Belle Isle",
+        "track_id": 319,
+        "track_name": "Detroit Grand Prix at Belle Isle"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 1,
+          "skies_low": 1,
+          "temp_high": 21,
+          "temp_low": 20.1,
+          "temp_units": 1,
+          "wind_high": 17.9,
+          "wind_low": 16.6,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -197081,
+      "winner_name": "Empire Racing Vanilla"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-10-11T18:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4151690,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 252607531,
+      "status": 4,
+      "subsession_id": 71982743,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "Belle Isle",
+        "track_id": 319,
+        "track_name": "Detroit Grand Prix at Belle Isle"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 2,
+          "skies_low": 1,
+          "temp_high": 23,
+          "temp_low": 22.8,
+          "temp_units": 1,
+          "wind_high": 13.4,
+          "wind_low": 10.9,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -379142,
+      "winner_name": "RPM Racing Black FTR"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-10-12T13:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 120,
+      "private_session_id": 4151691,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 252691988,
+      "status": 4,
+      "subsession_id": 72000755,
+      "team_entry_count": 0,
+      "time_limit": 120,
+      "track": {
+        "config_name": "Belle Isle",
+        "track_id": 319,
+        "track_name": "Detroit Grand Prix at Belle Isle"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 0,
+          "skies_low": 0,
+          "temp_high": 27.7,
+          "temp_low": 27,
+          "temp_units": 1,
+          "wind_high": 4.7,
+          "wind_low": 4.3,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -378454,
+      "winner_name": "RPM Racing Red FTR"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-10-12T15:45:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 30,
+      "private_session_id": 4146333,
+      "qualify_laps": 0,
+      "qualify_length": 45,
+      "race_laps": 0,
+      "race_length": 240,
+      "session_id": 252701777,
+      "status": 4,
+      "subsession_id": 72002850,
+      "team_entry_count": 0,
+      "time_limit": 360,
+      "track": {
+        "config_name": "Belle Isle",
+        "track_id": 319,
+        "track_name": "Detroit Grand Prix at Belle Isle"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 8,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0.3,
+          "max_precip_rate_desc": "Light",
+          "precip_chance": 0,
+          "skies_high": 1,
+          "skies_low": 1,
+          "temp_high": 18.6,
+          "temp_low": 18.6,
+          "temp_units": 1,
+          "wind_high": 31.1,
+          "wind_low": 27.6,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -114825,
+      "winner_name": "Stage One Racing #83"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-10-30T19:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4171461,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 254638426,
+      "status": 4,
+      "subsession_id": 72397527,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "Moto",
+        "track_id": 474,
+        "track_name": "Circuito de Jerez - Ángel Nieto"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 1,
+          "skies_low": 1,
+          "temp_high": 22.3,
+          "temp_low": 21.8,
+          "temp_units": 1,
+          "wind_high": 16.4,
+          "wind_low": 15,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -161911,
+      "winner_name": "RPM Racing"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-10-31T23:00:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4179647,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 254761273,
+      "status": 4,
+      "subsession_id": 72422903,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "Moto",
+        "track_id": 474,
+        "track_name": "Circuito de Jerez - Ángel Nieto"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 3,
+          "skies_low": 2,
+          "temp_high": 21.4,
+          "temp_low": 21.1,
+          "temp_units": 1,
+          "wind_high": 20.2,
+          "wind_low": 18.5,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -203420,
+      "winner_name": "Hugh Jass - White"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-11-01T19:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4179650,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 254852398,
+      "status": 4,
+      "subsession_id": 72440810,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "Moto",
+        "track_id": 474,
+        "track_name": "Circuito de Jerez - Ángel Nieto"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 3,
+          "skies_low": 1,
+          "temp_high": 25.9,
+          "temp_low": 25.4,
+          "temp_units": 1,
+          "wind_high": 1.8,
+          "wind_low": 1.8,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -197550,
+      "winner_name": "EAGLE Speed Academy E-Sports #G"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-11-02T14:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 120,
+      "private_session_id": 4179651,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 254937539,
+      "status": 4,
+      "subsession_id": 72458495,
+      "team_entry_count": 0,
+      "time_limit": 120,
+      "track": {
+        "config_name": "Moto",
+        "track_id": 474,
+        "track_name": "Circuito de Jerez - Ángel Nieto"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 1,
+          "skies_low": 1,
+          "temp_high": 20.4,
+          "temp_low": 20.3,
+          "temp_units": 1,
+          "wind_high": 28.4,
+          "wind_low": 25.6,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -378454,
+      "winner_name": "RPM Racing Red FTR"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-11-02T16:45:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 30,
+      "private_session_id": 4157311,
+      "qualify_laps": 0,
+      "qualify_length": 45,
+      "race_laps": 0,
+      "race_length": 240,
+      "session_id": 254947440,
+      "status": 4,
+      "subsession_id": 72460679,
+      "team_entry_count": 0,
+      "time_limit": 360,
+      "track": {
+        "config_name": "Moto",
+        "track_id": 474,
+        "track_name": "Circuito de Jerez - Ángel Nieto"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 8,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 1,
+          "skies_low": 0,
+          "temp_high": 20.4,
+          "temp_low": 20,
+          "temp_units": 1,
+          "wind_high": 27.7,
+          "wind_low": 19.5,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -378454,
+      "winner_name": "RPM Racing Red FTR"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-12-04T19:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4226466,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 258439360,
+      "status": 4,
+      "subsession_id": 73184048,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "NASCAR Long",
+        "track_id": 98,
+        "track_name": "Sonoma Raceway"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 8,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 1.6,
+          "max_precip_rate_desc": "Light",
+          "precip_chance": 65,
+          "skies_high": 3,
+          "skies_low": 1,
+          "temp_high": 18.6,
+          "temp_low": 18.5,
+          "temp_units": 1,
+          "wind_high": 20.9,
+          "wind_low": 17.7,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -379142,
+      "winner_name": "RPM Racing Black FTR"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-12-05T23:00:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4226467,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 258563084,
+      "status": 4,
+      "subsession_id": 73210658,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "NASCAR Long",
+        "track_id": 98,
+        "track_name": "Sonoma Raceway"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 8,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 1.6,
+          "max_precip_rate_desc": "Light",
+          "precip_chance": 65,
+          "skies_high": 3,
+          "skies_low": 2,
+          "temp_high": 18.7,
+          "temp_low": 18.5,
+          "temp_units": 1,
+          "wind_high": 21.3,
+          "wind_low": 19,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -379142,
+      "winner_name": "RPM Racing Black FTR"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-12-06T19:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4226468,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 258655307,
+      "status": 4,
+      "subsession_id": 73229318,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "NASCAR Long",
+        "track_id": 98,
+        "track_name": "Sonoma Raceway"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 8,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 1.6,
+          "max_precip_rate_desc": "Light",
+          "precip_chance": 65,
+          "skies_high": 3,
+          "skies_low": 1,
+          "temp_high": 18.7,
+          "temp_low": 18.5,
+          "temp_units": 1,
+          "wind_high": 20,
+          "wind_low": 16.7,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -378526,
+      "winner_name": "RPM Racing Purple FTR"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-12-07T14:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 120,
+      "private_session_id": 4226469,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 258741158,
+      "status": 4,
+      "subsession_id": 73247891,
+      "team_entry_count": 0,
+      "time_limit": 120,
+      "track": {
+        "config_name": "NASCAR Long",
+        "track_id": 98,
+        "track_name": "Sonoma Raceway"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 8,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 1.8,
+          "max_precip_rate_desc": "Light",
+          "precip_chance": 73,
+          "skies_high": 3,
+          "skies_low": 3,
+          "temp_high": 18.6,
+          "temp_low": 18.5,
+          "temp_units": 1,
+          "wind_high": 18.5,
+          "wind_low": 16.7,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -379759,
+      "winner_name": "MRC Endurance Team"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2024-12-07T16:45:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 30,
+      "private_session_id": 4184229,
+      "qualify_laps": 0,
+      "qualify_length": 45,
+      "race_laps": 0,
+      "race_length": 240,
+      "session_id": 258751088,
+      "status": 4,
+      "subsession_id": 73250204,
+      "team_entry_count": 0,
+      "time_limit": 360,
+      "track": {
+        "config_name": "NASCAR Long",
+        "track_id": 98,
+        "track_name": "Sonoma Raceway"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 8,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 2.3,
+          "max_precip_rate_desc": "Light",
+          "precip_chance": 92,
+          "skies_high": 2,
+          "skies_low": 0,
+          "temp_high": 18.7,
+          "temp_low": 18.4,
+          "temp_units": 1,
+          "wind_high": 27.8,
+          "wind_low": 21.1,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -326948,
+      "winner_name": "TSRC Esports"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2025-01-22T19:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4320987,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 263072190,
+      "status": 4,
+      "subsession_id": 74313754,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "Grand Prix",
+        "track_id": 485,
+        "track_name": "Circuit Zandvoort"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 1,
+          "skies_low": 1,
+          "temp_high": 18.5,
+          "temp_low": 18.5,
+          "temp_units": 1,
+          "wind_high": 19.4,
+          "wind_low": 16.8,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -219856,
+      "winner_name": "Viraco Esports Team Orange"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2025-01-23T23:00:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4320988,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 263194878,
+      "status": 4,
+      "subsession_id": 74341588,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "Grand Prix",
+        "track_id": 485,
+        "track_name": "Circuit Zandvoort"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 1,
+          "skies_low": 1,
+          "temp_high": 18.5,
+          "temp_low": 18.5,
+          "temp_units": 1,
+          "wind_high": 19.4,
+          "wind_low": 16.8,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -203420,
+      "winner_name": "Hugh Jass - White"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2025-01-24T19:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4320989,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 263286209,
+      "status": 4,
+      "subsession_id": 74361796,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "Grand Prix",
+        "track_id": 485,
+        "track_name": "Circuit Zandvoort"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 1,
+          "skies_low": 1,
+          "temp_high": 18.5,
+          "temp_low": 18.5,
+          "temp_units": 1,
+          "wind_high": 19.4,
+          "wind_low": 16.8,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -378526,
+      "winner_name": "RPM Racing Purple FTR"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2025-01-25T14:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 120,
+      "private_session_id": 4320990,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 263371223,
+      "status": 4,
+      "subsession_id": 74381196,
+      "team_entry_count": 0,
+      "time_limit": 120,
+      "track": {
+        "config_name": "Grand Prix",
+        "track_id": 485,
+        "track_name": "Circuit Zandvoort"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 1,
+          "skies_low": 1,
+          "temp_high": 18.5,
+          "temp_low": 18.5,
+          "temp_units": 1,
+          "wind_high": 19.4,
+          "wind_low": 16.8,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -378454,
+      "winner_name": "RPM Racing Red FTR"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2025-01-25T16:45:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 30,
+      "private_session_id": 4307171,
+      "qualify_laps": 0,
+      "qualify_length": 45,
+      "race_laps": 0,
+      "race_length": 240,
+      "session_id": 263381119,
+      "status": 4,
+      "subsession_id": 74383570,
+      "team_entry_count": 0,
+      "time_limit": 360,
+      "track": {
+        "config_name": "Grand Prix",
+        "track_id": 485,
+        "track_name": "Circuit Zandvoort"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 8,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0.1,
+          "skies_high": 3,
+          "skies_low": 3,
+          "temp_high": 18.6,
+          "temp_low": 18.6,
+          "temp_units": 1,
+          "wind_high": 18.2,
+          "wind_low": 17.3,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -378454,
+      "winner_name": "RPM Racing Red FTR"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2025-02-26T19:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4387682,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 266844567,
+      "status": 4,
+      "subsession_id": 75165732,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "Full Course",
+        "track_id": 153,
+        "track_name": "Mid-Ohio Sports Car Course"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 2,
+          "skies_low": 1,
+          "temp_high": 26,
+          "temp_low": 24.2,
+          "temp_units": 1,
+          "wind_dir": 3,
+          "wind_high": 4.1,
+          "wind_low": 1.8,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -339060,
+      "winner_name": "RPM Racing Black"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2025-02-27T23:00:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4387685,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 266969414,
+      "status": 4,
+      "subsession_id": 75193663,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "Full Course",
+        "track_id": 153,
+        "track_name": "Mid-Ohio Sports Car Course"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 2,
+          "skies_low": 1,
+          "temp_high": 26,
+          "temp_low": 24.2,
+          "temp_units": 1,
+          "wind_dir": 3,
+          "wind_high": 4.1,
+          "wind_low": 1.8,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -203420,
+      "winner_name": "Hugh Jass - White"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2025-02-28T19:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 180,
+      "private_session_id": 4387683,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 267062591,
+      "status": 4,
+      "subsession_id": 75213932,
+      "team_entry_count": 0,
+      "time_limit": 180,
+      "track": {
+        "config_name": "Full Course",
+        "track_id": 153,
+        "track_name": "Mid-Ohio Sports Car Course"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 2,
+          "skies_low": 1,
+          "temp_high": 26,
+          "temp_low": 24.2,
+          "temp_units": 1,
+          "wind_dir": 3,
+          "wind_high": 4.1,
+          "wind_low": 1.8,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -109301,
+      "winner_name": "Team Daniel Handover"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2025-03-01T13:30:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 120,
+      "private_session_id": 4387684,
+      "qualify_laps": 0,
+      "qualify_length": 0,
+      "race_laps": 0,
+      "race_length": 0,
+      "session_id": 267144739,
+      "status": 4,
+      "subsession_id": 75233368,
+      "team_entry_count": 0,
+      "time_limit": 120,
+      "track": {
+        "config_name": "Full Course",
+        "track_id": 153,
+        "track_name": "Mid-Ohio Sports Car Course"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 0,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 2,
+          "skies_low": 1,
+          "temp_high": 26,
+          "temp_low": 24.2,
+          "temp_units": 1,
+          "wind_dir": 3,
+          "wind_high": 4.1,
+          "wind_low": 1.8,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -378454,
+      "winner_name": "RPM Racing Red FTR"
+    },
+    {
+      "cars": [
+        {
+          "car_id": 173,
+          "car_name": "Ferrari 296 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 112,
+          "car_name": "Audi RS 3 LMS TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 185,
+          "car_name": "Ford Mustang GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 119,
+          "car_name": "Porsche 718 Cayman GT4 Clubsport MR",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 146,
+          "car_name": "Hyundai Elantra N TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 176,
+          "car_name": "Audi R8 LMS EVO II GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 147,
+          "car_name": "Honda Civic Type R TCR",
+          "car_class_id": 70959,
+          "car_class_name": "FTR S6 TCR"
+        },
+        {
+          "car_id": 169,
+          "car_name": "Porsche 911 GT3 R (992)",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 188,
+          "car_name": "McLaren 720S GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 133,
+          "car_name": "Lamborghini Huracán GT3 EVO",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 189,
+          "car_name": "BMW M4 G82 GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 184,
+          "car_name": "Chevrolet Corvette Z06 GT3.R",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        },
+        {
+          "car_id": 157,
+          "car_name": "Mercedes-AMG GT4",
+          "car_class_id": 70960,
+          "car_class_name": "FTR S6 GT4"
+        },
+        {
+          "car_id": 132,
+          "car_name": "BMW M4 GT3",
+          "car_class_id": 70961,
+          "car_class_name": "FTR S6 GT3"
+        }
+      ],
+      "driver_changes": true,
+      "entry_count": 0,
+      "has_results": true,
+      "launch_at": "2025-03-01T15:45:00Z",
+      "league_id": 6529,
+      "league_season_id": 110898,
+      "lone_qualify": false,
+      "pace_car_class_id": null,
+      "pace_car_id": null,
+      "password_protected": false,
+      "practice_length": 30,
+      "private_session_id": 4363060,
+      "qualify_laps": 0,
+      "qualify_length": 45,
+      "race_laps": 0,
+      "race_length": 360,
+      "session_id": 267154794,
+      "status": 4,
+      "subsession_id": 75235636,
+      "team_entry_count": 0,
+      "time_limit": 480,
+      "track": {
+        "config_name": "Full Course",
+        "track_id": 153,
+        "track_name": "Mid-Ohio Sports Car Course"
+      },
+      "track_state": {
+        "leave_marbles": true,
+        "practice_grip_compound": -1,
+        "practice_rubber": 10,
+        "qualify_grip_compound": -1,
+        "qualify_rubber": -1,
+        "race_grip_compound": -1,
+        "race_rubber": -1,
+        "warmup_grip_compound": -1,
+        "warmup_rubber": -1
+      },
+      "weather": {
+        "allow_fog": false,
+        "fog": 0,
+        "precip_option": 8,
+        "rel_humidity": 45,
+        "skies": 1,
+        "temp_units": 1,
+        "temp_value": 26,
+        "track_water": 0,
+        "type": 3,
+        "version": 1,
+        "weather_summary": {
+          "max_precip_rate": 0,
+          "max_precip_rate_desc": "None",
+          "precip_chance": 0,
+          "skies_high": 2,
+          "skies_low": 0,
+          "temp_high": 20.6,
+          "temp_low": 19.3,
+          "temp_units": 1,
+          "wind_dir": 4,
+          "wind_high": 15.7,
+          "wind_low": 9.2,
+          "wind_units": 1
+        },
+        "weather_var_initial": 0,
+        "weather_var_ongoing": 0,
+        "wind_dir": 0,
+        "wind_units": 1,
+        "wind_value": 3
+      },
+      "winner_id": -379759,
+      "winner_name": "MRC Endurance Team"
+    }
+  ],
+  "success": true,
+  "season_id": 110898,
+  "league_id": 6529
+}
