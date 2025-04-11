@@ -121,6 +121,7 @@ type LeagueSeasonSession struct {
 	RaceLaps          int                      `json:"race_laps"`
 	RaceLength        int                      `json:"race_length"`
 	SessionID         int                      `json:"session_id"`
+	SubsessionID      int                      `json:"subsession_id"`
 	Status            int                      `json:"status"`
 	TrackID           int                      `json:"track_id"`
 	TrackName         string                   `json:"track_name"`
