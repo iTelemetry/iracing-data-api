@@ -12,6 +12,8 @@ type IRData interface {
 	Email() string
 	IsLoggedIn() bool
 	GetLoginExpiration() time.Time
+	MembersUrl() string
+	HttpClient() *http.Client
 
 	RateLimit() *RateLimit
 	Car() DataCar
@@ -37,7 +39,8 @@ type irdata struct {
 	cookies    []*http.Cookie
 	expiration time.Time
 
-	rateLimit *RateLimit
+	rateLimit     *RateLimit
+	authenticator Authenticator
 }
 
 func (d *irdata) Email() string {
@@ -46,6 +49,14 @@ func (d *irdata) Email() string {
 
 func (d *irdata) IsLoggedIn() bool {
 	return d.expiration.After(time.Now())
+}
+
+func (d *irdata) MembersUrl() string {
+	return d.membersUrl
+}
+
+func (d *irdata) HttpClient() *http.Client {
+	return d.client
 }
 
 func (d *irdata) needsReauthorization() bool {
@@ -97,7 +108,7 @@ func (d *irdata) get(ctx context.Context, url string) (resp *http.Response, err 
 
 func (d *irdata) Reauthenticate() error {
 	if d.autoReauthorize && d.needsReauthorization() {
-		err := d.Authenticate()
+		err := d.Authenticate(true)
 		if err != nil {
 			return err
 		}

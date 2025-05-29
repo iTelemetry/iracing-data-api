@@ -1,13 +1,10 @@
 package irdata
 
 import (
-	"bytes"
 	"crypto/sha256"
 	"encoding/base64"
-	"encoding/json"
 	"errors"
 	"fmt"
-	"io"
 	"net/http"
 	"net/http/cookiejar"
 	"strings"
@@ -67,6 +64,10 @@ func Login(email string, password string, options ...Options) (IRData, error) {
 		},
 	}
 
+	data.authenticator = &DefaultAuthenticator{
+		irdata: data,
+	}
+
 	for _, option := range options {
 		err := option.Apply(data)
 		if err != nil {
@@ -79,7 +80,7 @@ func Login(email string, password string, options ...Options) (IRData, error) {
 		}
 	}
 
-	err := data.Authenticate()
+	err := data.Authenticate(false)
 	if err != nil {
 		return nil, err
 	}
@@ -87,89 +88,18 @@ func Login(email string, password string, options ...Options) (IRData, error) {
 	return data, nil
 }
 
-func (d *irdata) Authenticate() error {
-	/**
-	 * data := url.Values{}
-	 * data.Set("username", d.email)
-	 * data.Set("password", d.passwordHash)
-	 * resp, err := d.client.Post(fmt.Sprintf("%s/Login", d.membersUrl), "application/x-www-form-urlencoded", strings.NewReader(data.Encode()))
-	 * if err != nil {
-	 * 	return &ConfigurationError{Msg: "unable to make request", Trigger: err}
-	 * }
-	 */
-
-	requestBody := AuthRequest{
-		Email:    d.email,
-		Password: d.passwordHash,
-	}
-
-	body, err := json.Marshal(requestBody)
+func (d *irdata) Authenticate(force bool) error {
+	cookieUrl, cookies, expiration, err := d.authenticator.Authenticate(d.email, d.passwordHash, force)
 	if err != nil {
-		return &ConfigurationError{Msg: "unable to marshal request body", Trigger: err}
+		return err
 	}
 
-	bodyReader := bytes.NewReader(body)
-
-	resp, err := d.client.Post(fmt.Sprintf("%s/auth", d.membersUrl), "application/json", bodyReader)
-	if err != nil {
-		return &ConfigurationError{Msg: "unable to make request", Trigger: err}
-	}
-
-	defer resp.Body.Close()
-
-	if err != nil {
-		return &ConfigurationError{Msg: "unable to read authentication response", Trigger: err}
-	}
-
-	err = d.RateLimit().update(resp)
-	if err != nil {
-		return &ConfigurationError{Msg: "unable to update rate limit", Trigger: err}
-	}
-
-	if resp.StatusCode == 401 {
-		return &AuthenticationError{Msg: "invalid credentials"}
-	} else if resp.StatusCode == 503 {
-		return &ServiceUnavailableError{Msg: "service unavailable"}
-	} else if resp.StatusCode == 209 {
-		return &RateLimitExceededError{Msg: "too many requests"}
-	} else if resp.StatusCode != 200 {
-		return &ServiceUnavailableError{Msg: "unexpected error", Trigger: errors.New(resp.Status)}
-	}
-
-	r, err := io.ReadAll(resp.Body)
-	if err != nil {
-		return &ConfigurationError{Msg: "unable to read authentication response body", Trigger: err}
-	}
-
-	responseBody := AuthResponse{}
-	err = json.Unmarshal(r, &responseBody)
-	if err != nil {
-		return &ConfigurationError{Msg: "unable to unmarshal authentication response body", Trigger: err}
-	}
-
-	if responseBody.AuthCode == 0 || responseBody.AuthCode == float64(0) {
-		return &AuthenticationError{Msg: "authentication failed", Trigger: errors.New(responseBody.Message)}
-	}
-
-	membersCookie := false
-	d.cookies = resp.Cookies()
-	for _, cookie := range d.cookies {
-		if cookie.Name == "authtoken_members" {
-			d.expiration = cookie.Expires
-			membersCookie = true
-			break
-		}
-	}
-
+	d.cookies = cookies
+	d.expiration = expiration
 	if d.client.Jar == nil {
 		d.client.Jar, _ = cookiejar.New(&cookiejar.Options{})
 	}
 
-	d.client.Jar.SetCookies(resp.Request.URL, d.cookies)
-
-	if !membersCookie {
-		return &AuthenticationError{Msg: "unable to find 'authtoken_members' cookie"}
-	}
-
+	d.client.Jar.SetCookies(cookieUrl, d.cookies)
 	return nil
 }
