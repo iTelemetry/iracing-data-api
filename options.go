@@ -116,3 +116,26 @@ func (o OptionsRateLimitRetry) Apply(data *irdata) error {
 	data.rateLimit.attempts = o.Attempts
 	return nil
 }
+
+func WithAuthenticator(f func(ird IRData) Authenticator) Options {
+	return OptionsAuthenticator{
+		AuthenticatorInit: f,
+	}
+}
+
+type OptionsAuthenticator struct {
+	AuthenticatorInit func(ird IRData) Authenticator
+}
+
+func (o OptionsAuthenticator) Apply(data *irdata) error {
+	if o.AuthenticatorInit == nil {
+		return &ConfigurationError{Msg: "authenticator init func must not be nil"}
+	}
+
+	data.authenticator = o.AuthenticatorInit(data)
+	if data.authenticator == nil {
+		return &ConfigurationError{Msg: "authenticator init func result must not be nil"}
+	}
+
+	return nil
+}
