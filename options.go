@@ -117,14 +117,14 @@ func (o OptionsRateLimitRetry) Apply(data *irdata) error {
 	return nil
 }
 
-func WithAuthenticator(f func(ird IRData) Authenticator) Options {
+func WithAuthenticator(f func(ird IRData, def Authenticator) Authenticator) Options {
 	return OptionsAuthenticator{
 		AuthenticatorInit: f,
 	}
 }
 
 type OptionsAuthenticator struct {
-	AuthenticatorInit func(ird IRData) Authenticator
+	AuthenticatorInit func(ird IRData, def Authenticator) Authenticator
 }
 
 func (o OptionsAuthenticator) Apply(data *irdata) error {
@@ -132,7 +132,7 @@ func (o OptionsAuthenticator) Apply(data *irdata) error {
 		return &ConfigurationError{Msg: "authenticator init func must not be nil"}
 	}
 
-	data.authenticator = o.AuthenticatorInit(data)
+	data.authenticator = o.AuthenticatorInit(data, data.authenticator)
 	if data.authenticator == nil {
 		return &ConfigurationError{Msg: "authenticator init func result must not be nil"}
 	}
