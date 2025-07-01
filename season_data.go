@@ -46,3 +46,20 @@ type SpectatorSubSessionIDs struct {
 	Success       bool  `json:"success"`
 	SubsessionIds []int `json:"subsession_ids"`
 }
+
+type SpectatorSubSessionIDsDetail struct {
+	Success    bool  `json:"success"`
+	EventTypes []int `json:"event_types"`
+	SeasonIDs  []int `json:"season_ids"`
+
+	Subsessions []SpectatorSubSessionIDsDetailSubsession `json:"subsessions"`
+}
+
+type SpectatorSubSessionIDsDetailSubsession struct {
+	SubsessionID int       `json:"subsession_id"`
+	SessionID    int       `json:"session_id"`
+	SeasonID     int       `json:"season_id"`
+	StartTime    time.Time `json:"start_time"`
+	RaceWeekNum  int       `json:"race_week_num"`
+	EventType    int       `json:"event_type"`
+}

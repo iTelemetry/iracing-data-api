@@ -20,6 +20,7 @@ type DataSeason interface {
 	List(ctx context.Context, year int, quarter int) (Seasons, error)
 	RaceGuide(ctx context.Context, opts ...RaceGuideOption) (RaceGuide, error)
 	SpectatorSubSessionIDs(ctx context.Context, opts ...SpectatorSubSessionIDsOption) (SpectatorSubSessionIDs, error)
+	SpectatorSubSessionIDsDetail(ctx context.Context, opts ...SpectatorSubSessionIDsOption) (SpectatorSubSessionIDsDetail, error)
 }
 
 func (c *irdataSeason) List(ctx context.Context, year int, quarter int) (Seasons, error) {
@@ -107,6 +108,19 @@ func (o *EventTypes) ApplySpectatorSubSessionIDs(v *url.Values) {
 	v.Set("event_types", fmt.Sprintf("%s", strings.Join(str, ",")))
 }
 
+type SeasonIDs struct {
+	SeasonIDs []int
+}
+
+func (o *SeasonIDs) ApplySpectatorSubSessionIDs(v *url.Values) {
+	str := make([]string, len(o.SeasonIDs))
+	for i, et := range o.SeasonIDs {
+		str[i] = fmt.Sprintf("%d", et)
+	}
+
+	v.Set("season_ids", fmt.Sprintf("%s", strings.Join(str, ",")))
+}
+
 func (c *irdataSeason) SpectatorSubSessionIDs(ctx context.Context, opts ...SpectatorSubSessionIDsOption) (SpectatorSubSessionIDs, error) {
 	d := c.parent
 
@@ -127,6 +141,31 @@ func (c *irdataSeason) SpectatorSubSessionIDs(ctx context.Context, opts ...Spect
 	err = handleLink(ctx, d, resp, err, &output)
 	if err != nil {
 		return SpectatorSubSessionIDs{}, err
+	}
+
+	return output, nil
+}
+
+func (c *irdataSeason) SpectatorSubSessionIDsDetail(ctx context.Context, opts ...SpectatorSubSessionIDsOption) (SpectatorSubSessionIDsDetail, error) {
+	d := c.parent
+
+	u, err := url.Parse(fmt.Sprintf("%s/data/season/spectator_subsessionids_detail", d.membersUrl))
+	if err != nil {
+		return SpectatorSubSessionIDsDetail{}, &ConfigurationError{Msg: "unable to parse URL", Trigger: err}
+	}
+
+	q := u.Query()
+	for _, opt := range opts {
+		opt.ApplySpectatorSubSessionIDs(&q)
+	}
+
+	u.RawQuery = q.Encode()
+
+	resp, err := d.get(ctx, u.String())
+	var output SpectatorSubSessionIDsDetail
+	err = handleLink(ctx, d, resp, err, &output)
+	if err != nil {
+		return SpectatorSubSessionIDsDetail{}, err
 	}
 
 	return output, nil
