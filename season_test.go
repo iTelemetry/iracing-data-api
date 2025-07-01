@@ -70,3 +70,14 @@ func TestReturnsSeasonSpectatorSubSessionIDsWithEventTypes(t *testing.T) {
 		assert.Contains(t, opts, c)
 	}
 }
+
+func TestReturnsSeasonSpectatorSubSessionIDsDetail(t *testing.T) {
+	api := DefaultClient.Season()
+	assert.NotNil(t, api)
+
+	values, err := api.SpectatorSubSessionIDsDetail(context.TODO())
+	assert.NoError(t, err)
+	assert.NotEmpty(t, values)
+	assert.NotEmpty(t, values.Subsessions)
+	assert.NotEmpty(t, values.EventTypes)
+}
